@@ -12,7 +12,7 @@ To solve my client’s issue I will be creating a social media site using HTML C
 ## Rationale for proposed solution
 I will be making an SNS as it is the most convenient way for the client to be able to view other people's recipes and to comment on them. An SNS involves quick sharing of these recipes making it the most effective. Additionally, it will also enable the user to search through the recipes very effectively through ingredients and name.
 
-As for the software, first of all, I will be using HTML to create the website. This is because HTML enables the creation of the structure of the webpage, and for the developer it is quite easy to learn. Additionally, for the user, it creates a nice website. 
+As for the software, first of all, I will be using HTML to create the website. This is because HTML enables the creation of the structure of the webpage, and for the developer it is quite easy to learn. Additionally, for the user, it creates a nice website. [^2]
 
 Another language I will be using is CSS. This will enable me to structure the HTML webpage exactly how I want by creating a set of rules for it. This is important as for the end user, it enables them to have a clean website that they can use and navigate through easily. 
 
