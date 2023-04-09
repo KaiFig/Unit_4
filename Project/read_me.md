@@ -41,9 +41,6 @@ I will to design and make a social medai site for a client who is a high school 
 
 ## Record of Tasks
 
-
-## Test plan
-
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1       | Meeting my client                         | To identify what my client wants for a database  | 15min         | Apr 8th               | A         |
@@ -52,4 +49,8 @@ I will to design and make a social medai site for a client who is a high school 
 |4       | Write the design statement | Able to proceed with a clear plan and goal now that the design statement is written    | 10 min  | Feb 13  | A |
 |5       | Write each success criteria  | Have a clear outline of what is needed to be acheived for my client so I am able to fulfill the clients needs   | 20 min | Feb 13 | A  |
 |6       | Write 
+
+## Test plan
+
+
 
