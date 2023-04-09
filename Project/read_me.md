@@ -10,6 +10,14 @@ To solve my client’s issue I will be creating a social media site using HTML C
 
 
 ## Rationale for proposed solution
+I will be making an SNS as it is the most convenient way for the client to be able to view other people's recipes and to comment on them. An SNS involves quick sharing of these recipes making it the most effective. Additionally, it will also enable the user to search through the recipes very effectively through ingredients and name.
+
+As for the software, first of all, I will be using HTML to create the website. This is because HTML enables the creation of the structure of the webpage, and for the developer it is quite easy to learn. Additionally, for the user, it creates a nice website. 
+
+Another language I will be using is CSS. This will enable me to structure the HTML webpage exactly how I want by creating a set of rules for it. This is important as for the end user, it enables them to have a clean website that they can use and navigate through easily. 
+
+Lastly for the last language I will be using is Python. Python enables me to create the functionality for the website. I used python as it can be placed in HTML as well, creating an integrated website. Additionaly, it has a large library that enables me, the developer to rely on other libraries to make the website. Also, it has a very large community of developers, enabling the quick use of research in support of my project. 
+
 
 **Design statement:**
 I will to design and make a social medai site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
@@ -55,3 +63,19 @@ I will to design and make a social medai site for a client who is a high school 
 
 
 
+
+[^2]: Python Geeks. “Advantages of Python: Disadvantages of Python.” Python Geeks, 26 June
+
+2021, https://pythongeeks.org/advantages-disadvantages-of-python/.
+
+[^3]: S, Ravikiran A. “What Is Sqlite? and When to Use It?” *Simplilearn.com*, Simplilearn, 16 Feb.
+
+2023, https://www.simplilearn.com/tutorials/sql-tutorial/what-is-sqlite.
+
+[^4]:  Uwase, Ange. “Here Is the Reason Why SQLAlchemy Is so Popular.” Medium, 8 Feb.
+
+2021,https://towardsdatascience.com/here-is-the-reason-why-sqlalchemy-is-so-popular-43b489d3fb00#:~:text=SQLAlchemy%20is%20the%20ORM%20of.
+
+[^5]: Gupta, Kaustubh. “What Is KivyMD: Creating Android Machine Learning Apps Using KivyMD.” *Analytics Vidhya*, 6 July
+
+2021, https://www.analyticsvidhya.com/blog/2021/06/creating-android-ml-app-kivymd/#:~:text=KivyMD%20is%20built%20on%20the.
