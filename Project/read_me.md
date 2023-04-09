@@ -45,10 +45,11 @@ I will to design and make a social medai site for a client who is a high school 
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
 | 1       | Meeting my client                         | To identify what my client wants for a database  | 15min         | Apr 8th               | A         |
 | 2       | Write the Problem defition                        | Expand our problem context and identify a customer and their specific problem so that we know what we need to acheive with our project  |  20min         | Apr 8th          | A         |
-|3       | Write the proposed solution and rationale for propsed solution  | My client is able to see what I am creating as a solution and input feedback so that he gets what he wants |50 min | Feb 12    | A     | 
-|4       | Write the design statement | Able to proceed with a clear plan and goal now that the design statement is written    | 10 min  | Feb 13  | A |
-|5       | Write each success criteria  | Have a clear outline of what is needed to be acheived for my client so I am able to fulfill the clients needs   | 20 min | Feb 13 | A  |
-|6       | Write 
+|3       | Write the proposed solution and rationale for propsed solution  | My client is able to see what I am creating as a solution and input feedback so that he gets what he wants |50 min | Apr 8th    | A     | 
+|4       | Write the design statement | Able to proceed with a clear plan and goal now that the design statement is written    | 10 min  | Apr 8th  | A |
+|5       | Write each success criteria  | Have a clear outline of what is needed to be acheived for my client so I am able to fulfill the clients needs   | 20 min | Apr 8th | A  |
+|6       | Create the system diagram  | Can showcase what the whole SNS will look like and what files and programs it will run  | 30 min  | Apr 9th | B  | 
+|7       | 
 
 ## Test plan
 
