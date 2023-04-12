@@ -1,5 +1,8 @@
 # Unit 4 project
 
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project%204%20picture.jpeg)
+**Fig 1** This is the title picture for my repository
+
 # Criteria A: Planning
 
 ## Problem definition
