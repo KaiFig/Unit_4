@@ -28,11 +28,11 @@ I will to design and make a social medai site for a client who is a high school 
 
 ## Success criteria
 1. The user can upload their own recipes as a social media post
-2. The user can view other social media posts
-3. User can comment on other social media posts
+2. There is a secure login and registration page for each user 
+3. The user can view other social media posts
 4. Users are able to create their own shopping list in the app
 5. Users can search recipes based on ingredients 
-6. There is a secure login and registration page for each user 
+6. User can comment on other social media posts
 
 
 # Criteria B: Design
