@@ -61,7 +61,12 @@ I will to design and make a social medai site for a client who is a high school 
 |5       | Write each success criteria  | Have a clear outline of what is needed to be acheived for my client so I am able to fulfill the clients needs   | 20 min | Apr 8th | A  |
 |6       | Create the system diagram  | Can showcase what the whole SNS will look like and what files and programs it will run  | 30 min  | Apr 9th | B  | 
 |7       | Create the wireframe diagram  | We can showcase what the SNS will look like, and i have a plan for how to style it using HTML and CSS | 45 min  | Apr 14th | B   | 
-|8      | Create the login and signup pages  | I am able tocreate the login and signup so that each user is able to have their own posts and account | 30 min   | Apr 14th | C |
+|8      | Create the database   | I have a database so that each user is able to have their own account and they are able to have a record of posts   | 20 min | Apr 15th | C | 
+|9      | Create the login page  | I create the functionality for the login page, enabling each user to have their own account, and their posts to be linked back to them   | 30 min  | Apr 16th | 
+|10     | Create the signup page | This enables users to signup to the application, making sure that their passwords are long and strong enough   | 30 min | Apr 16th
+|11     | Create the home page  | This will be the first screen that the user encounters when they login to the application   | 30 min  | Apr 16th 
+|12     | Create the new posts page   | This enables each user to add a post to the Social media site, with their recipe and other important information. Additionally, it will be linked back to the user  | 30 min  | Apr 16th 
+
 
 
 ## Test plan
