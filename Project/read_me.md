@@ -60,7 +60,9 @@ I will to design and make a social medai site for a client who is a high school 
 |4       | Write the design statement | Able to proceed with a clear plan and goal now that the design statement is written    | 10 min  | Apr 8th  | A |
 |5       | Write each success criteria  | Have a clear outline of what is needed to be acheived for my client so I am able to fulfill the clients needs   | 20 min | Apr 8th | A  |
 |6       | Create the system diagram  | Can showcase what the whole SNS will look like and what files and programs it will run  | 30 min  | Apr 9th | B  | 
-|7       | 
+|7       | Create the wireframe diagram  | We can showcase what the SNS will look like, and i have a plan for how to style it using HTML and CSS | 45 min  | Apr 14th | B   | 
+|8      | Create the login and signup pages  | I am able tocreate the login and signup so that each user is able to have their own posts and account | 30 min   | Apr 14th | C |
+
 
 ## Test plan
 
