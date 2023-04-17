@@ -62,10 +62,15 @@ I will to design and make a social medai site for a client who is a high school 
 |6       | Create the system diagram  | Can showcase what the whole SNS will look like and what files and programs it will run  | 30 min  | Apr 9th | B  | 
 |7       | Create the wireframe diagram  | We can showcase what the SNS will look like, and i have a plan for how to style it using HTML and CSS | 45 min  | Apr 14th | B   | 
 |8      | Create the database   | I have a database so that each user is able to have their own account and they are able to have a record of posts   | 20 min | Apr 15th | C | 
-|9      | Create the login page  | I create the functionality for the login page, enabling each user to have their own account, and their posts to be linked back to them   | 30 min  | Apr 16th | 
-|10     | Create the signup page | This enables users to signup to the application, making sure that their passwords are long and strong enough   | 30 min | Apr 16th
-|11     | Create the home page  | This will be the first screen that the user encounters when they login to the application   | 30 min  | Apr 16th 
-|12     | Create the new posts page   | This enables each user to add a post to the Social media site, with their recipe and other important information. Additionally, it will be linked back to the user  | 30 min  | Apr 16th 
+|9      | Create the login page  | I create the functionality for the login page, enabling each user to have their own account, and their posts to be linked back to them   | 30 min  | Apr 16th | C | 
+|10     | Create the signup page | This enables users to signup to the application, making sure that their passwords are long and strong enough   | 30 min | Apr 16th  | C | 
+|11     | Create the home page  | This will be the first screen that the user encounters when they login to the application   | 30 min  | Apr 16th | C | 
+|12     | Create the new posts page   | This enables each user to add a post to the Social media site, with their recipe and other important information. Additionally, it will be linked back to the user  | 30 min  | Apr 16th | C | 
+|13     | Create the css for the signup page  | It makes everything look much better and the user is able to have a better user experience | 30 min   | Apr 16th  | C   | 
+|14     | Create the css for the login and new posts page   | Better user experience  | 30 min  | Apr 16th  | C | 
+|15     | Create the css for home page  | Better user experience  | 30 min  | Apr 16th  | C | 
+|16     | Create the search bar   | It enables the user to search the database for a recipe with a specific ingredient so that they can base their recipes on what they have | 45 min   | Apr 17th  | C | 
+|17     | Create the flow diagrams for an interesting function  | I am able to showcase to everyone how my code works so that they are able to further develop on it  | 45 min  | APR 17th | B | 
 
 
 
