@@ -9,11 +9,11 @@
 When I brainstormed with my client (myself) about problems I face and a SNS that would solve that, I realized that in school, we are not able to share recipes that we make, which is a shame as we come from such a diverse background and have lots of new and interesting recipes to share. At school, unless we are close to someone, we usually do not get the opportunity to cook with them or learn their recipes. Also, even if I search online, it is hard to get help on a recipe as I don't know them, and there are usually no ways of contacting them. Therefore, an SNS would enable messaging for help. Additionally, whenever I go to the supermarket, since I go there without a shopping list for recipes, I end up buying more than I need. This contributes to increased spending, and also, since I am not able to use everything, it makes me waste food. I have tried writing my own shopping list by looking at the recipe before and writing stuff down, however I have forgotten a nmber of things before so it's not the most effective. As proof of this, the notest taken from the brainstorming session are listed in the appendix. 
 　
 ## Proposed solution
-To solve my client’s issue I will be creating a social media site using HTML CSS and Python. This site will allow the end user to share their own recipes and other users to share theirs as well. Additionally, they will be able to comment on the individual posts and make a shopping list
+To solve my client’s issue I will be creating a web based social media site using HTML CSS and Python. This site will allow the end user to share their own recipes and other users to share theirs as well. Additionally, they can make a shopping list
 
 
 ## Rationale for proposed solution
-I will be making an SNS as it is the most convenient way for the client to be able to view other people's recipes and to comment on them. An SNS involves quick sharing of these recipes making it the most effective. Additionally, it will also enable the user to search through the recipes very effectively through ingredients and name.
+I will be making an social media website as it is the most convenient way for the client to be able to view other people's recipes and to comment on them. An SNS involves quick sharing of these recipes making it the most effective. Additionally, it will also enable the user to search through the recipes very effectively through ingredients and name.
 
 As for the software, first of all, I will be using HTML to create the website. This is because HTML enables the creation of the structure of the webpage, and for the developer it is quite easy to learn. Additionally, for the user, it creates a nice website. [^2]
 
@@ -23,16 +23,16 @@ Lastly for the last language I will be using is Python. Python enables me to cre
 
 
 **Design statement:**
-I will to design and make a social medai site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
+I will to design and make a web based social media site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
 
 
 ## Success criteria
-1. The user can upload their own recipes as a social media post
+1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients 
 2. There is a secure login and registration page for each user 
 3. The user can view other social media posts
 4. Users are able to create their own shopping list in the app
 5. Users can search recipes based on ingredients 
-6. User can comment on other social media posts
+6. User can have their own profile page that displays their email and posts. 
 
 
 # Criteria B: Design
@@ -70,8 +70,8 @@ I will to design and make a social medai site for a client who is a high school 
 |14     | Create the css for the login and new posts page   | Better user experience  | 30 min  | Apr 16th  | C | 
 |15     | Create the css for home page  | Better user experience  | 30 min  | Apr 16th  | C | 
 |16     | Create the search bar   | It enables the user to search the database for a recipe with a specific ingredient so that they can base their recipes on what they have | 45 min   | Apr 17th  | C | 
-|17     | Create the flow diagrams for an interesting function  | I am able to showcase to everyone how my code works so that they are able to further develop on it  | 45 min  | APR 17th | B | 
-
+|17     | Create the flow diagrams for an interesting function  | I am able to showcase to everyone how my code works so that they are able to further develop on it  | 45 min  | Apr 17th | B | 
+|18     | Create the profile page in the website   | The user is able to have their own profile page where they are able to see all their posts   | 45 min  | Apr 17th  | C | 
 
 
 ## Test plan
