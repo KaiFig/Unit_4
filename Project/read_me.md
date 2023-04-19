@@ -72,11 +72,15 @@ I will to design and make a web based social media site for a client who is a hi
 |16     | Create the search bar   | It enables the user to search the database for a recipe with a specific ingredient so that they can base their recipes on what they have | 45 min   | Apr 17th  | C | 
 |17     | Create the flow diagrams for an interesting function  | I am able to showcase to everyone how my code works so that they are able to further develop on it  | 45 min  | Apr 17th | B | 
 |18     | Create the profile page in the website   | The user is able to have their own profile page where they are able to see all their posts   | 45 min  | Apr 17th  | C | 
+|19     | Create the shopping list page in the database | This saves the users ingredients that they click on   | 20 min  | Apr 18th  | C | 
+|20     | Create the shopping list page in the website  | The user is able to see each ingredient that they saved   | 40 min  | Apr 19th  | C  | 
+|21     | Update the record of tasks    | I have already done a few unit tests so this enables me to give a record of them  | Apr 19th  | C   | 
+
 
 
 ## Test plan
 
 | Instruction                        | Category     | Input example / code                               | Description                                                                                                        | Expected output                                                         | Success criteria |
 |------------------------------------|--------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------|
-
+|Test the login   | Unit testing  | Username and password   | The user is able to login to the application and the home screen is displayed when they enter. An error message appears if the password or the username is not correct  | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
 
