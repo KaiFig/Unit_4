@@ -38,6 +38,7 @@ I will to design and make a web based social media site for a client who is a hi
 # Criteria B: Design
 
 ## System diagram
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_system_diagram.jpg)
 
 ## ER diagram
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_ER_diagram.jpg)
