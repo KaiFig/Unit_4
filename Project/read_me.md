@@ -85,3 +85,65 @@ I will to design and make a web based social media site for a client who is a hi
 |Test the login   | Unit testing  | Username and password   | The user is able to login to the application and the home screen is displayed when they enter. An error message appears if the password or the username is not correct  | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
 |Test the login, registeration, home screen, new posts and profile page  | Integration testing   | Username, password, title, content, ingredients   | The user is able to signup and then login, letting them go to the home screen where they are able to view everyone's posts and then they are able upload new posts | They are able to signup and login and create a new post that is displayed in the home screen and profile page  | 1, 2, 3, 6
 
+
+
+# Criteria C: Development
+
+```.py
+from my_lib import database_worker, encrpyt_password, check_password
+```
+I made this to simplify my code. Creating this function means that every time i have to save something to a database, I am able to just call the function instead of writing it all out every single time. Additionally, if I need to change something I only have one point to change. This is an example of the computational thinking skill pattern recognition as I was able to see that this is something that is repeated throughout. Additionally, it also shows algorithm design as I used an algorithm that enabled me to do the exact same things many times. 
+
+```.py
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Welcome to the most popular SNS</title>
+    {% endif %}
+    <link rel="stylesheet" href="/static/my_style.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("home") }}"> Homepage</a>
+    <a href = "{{ url_for("new_post") }}">Create a new post</a>
+    <a href = "{{ url_for ("logout") }}"> Logout</a>
+    <form action="/home" method="post">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+</div>
+{% block content %}{% endblock %}
+</body>
+</html>
+```
+
+I made this file as it enabled me to have a common html throughout my website. This enabled me to add a menu bar which I used in a few of my pages. Again, this was to prevent redundant code in my files. I could just have one file that organized the menu bar of a few of my screens instead of writing it in each single one. 
+
+```.py
+@app.route('/signup', methods=["GET","POST"])
+def signup():
+    msg = ""
+    if request.method == "POST":
+        email = request.form['email']
+        passwd=request.form['passwd']
+        passwdconfirm=request.form['confirmpasswd']
+        if passwd==passwdconfirm:
+            hash = encrpyt_password(passwd)
+            db = database_worker("social_net.db")
+            new_post = f"INSERT into users (email,password) values('{email}','{hash}')"
+            db.run_save(query=new_post)
+            return redirect(url_for('login'))
+        else:
+            msg = "Passwords do not match"
+    return render_template("signup.html", message=msg)
+    
+    ```
+    
+   In this route I used the database worker function to save the users details to the database. I first checked if the method was a post method and then from there I started the process of saving it to the database. I first got the user inputs from the webpage and then from there I made sure to validate them. The email is automatically validated but I made sure that the password was correct by having a confirmation. If it didn’t go through the page would display a message saying that and if it did the user would be redirected to the login. 
+
+
