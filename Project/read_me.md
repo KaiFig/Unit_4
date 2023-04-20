@@ -77,7 +77,13 @@ I will to design and make a web based social media site for a client who is a hi
 |18     | Create the profile page in the website   | The user is able to have their own profile page where they are able to see all their posts   | 45 min  | Apr 17th  | C | 
 |19     | Create the shopping list page in the database | This saves the users ingredients that they click on   | 20 min  | Apr 18th  | C | 
 |20     | Create the shopping list page in the website  | The user is able to see each ingredient that they saved   | 1 hr 30 min  | Apr 19th  | C  | 
-|21     | Update the record of tasks    | I have already done a few unit tests so this enables me to give a record of them  | Apr 19th  | C   | 
+|21     | Update the record of tasks    | I have already done a few unit tests so this enables me to give a record of them  | 20 min | Apr 19th  | C | 
+|22     | Test the login and signup pages   | I make sure that the user is able to login and signup into the website and that all the error messages work | 20 min | Apr 20th | C |
+|23     | Fix the search and sql queries | The user can search the database with a specific recipe and it returns everything. Also the search bar works more than once  | 1 hr  | Apr 21st | C  | 
+|24     | Complete the UML diagram | I show the relations between all the classes in the website so that other people viewing the code understand it | 20 min   | Apr 21st | B  | 
+|25     | Better the CSS for each page  | The UI is much more improved and users are able to enjoy a website that looks nice    | 45 min    | Apr 21st  | 
+
+
 
 
 
