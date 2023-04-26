@@ -152,7 +152,7 @@ def signup():
             msg = "Passwords do not match"
     return render_template("signup.html", message=msg)
     
-    ```
+```
     
    In this route I used the database worker function to save the users details to the database. I first checked if the method was a post method and then from there I started the process of saving it to the database. I first got the user inputs from the webpage and then from there I made sure to validate them. The email is automatically validated but I made sure that the password was correct by having a confirmation. If it didn’t go through the page would display a message saying that and if it did the user would be redirected to the login. 
 
