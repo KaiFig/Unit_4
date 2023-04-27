@@ -156,4 +156,10 @@ def signup():
     
    In this route I used the database worker function to save the users details to the database. I first checked if the method was a post method and then from there I started the process of saving it to the database. I first got the user inputs from the webpage and then from there I made sure to validate them. The email is automatically validated but I made sure that the password was correct by having a confirmation. If it didn’t go through the page would display a message saying that and if it did the user would be redirected to the login. 
 
+```.py
+if request.cookies.get('user_id'):
+```
+For each web route, I made sure to request the cookies from the user. This made sure that the user was already logged in and has a cookie. This means that even if someone knows the url of the website and they input the url into their search bar,they are not able to access it. This increases the security of the whole website as people need to have had accounts made and have to login as normal.
+
+
 
