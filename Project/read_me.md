@@ -341,3 +341,18 @@ table td:first-child {
 ```
 This is the CSS file for my home page. For each file, I made sure to use the same background image and the same style as this one. However, as different pages were made to do different things, I made seperate CSS files for each one, ending up with 3. One for the login and all the other form pages, one for the home page, and one for the shopping list page. This made the CSS as simple as possible without compromising on each pages needs. 
 
+## Delete shopping list items 
+
+```.py
+@app.route('/delete_ingredient/<int:ingredient_id>', methods=['POST'])
+def delete_ingredient(ingredient_id):
+    if request.cookies.get('user_id'):
+        user_id = request.cookies.get('user_id')
+        db = database_worker("social_net.db")
+        db.run_save(f"DELETE FROM ingredients WHERE id = {ingredient_id}")
+        db.close()
+        return redirect(url_for('shopping_list2',user_id=user_id))
+    else:
+        return redirect('login')
+```
+At first, I was not sure how to delete the items from the shopping list. This is because I needed a way to access each indvidual ingredient in the shopping list database and select their id. Therefore, to do this, I used the same technique we did in the users page in class, and in my home page. For each ingredient that I showed in the table, I managed to get their ids. Then I would be able to get the id whenver I wanted and then connect to the database to delete the item from it. 
