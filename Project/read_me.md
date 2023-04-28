@@ -250,5 +250,5 @@ table td:first-child {
 }
 
 ```
-This is the CSS file for my 
+This is the CSS file for my home page. For each file, I made sure to use the same background image and the same style as this one. However, as different pages were made to do different things, I made seperate CSS files for each one, ending up with 3. One for the login and all the other form pages, one for the home page, and one for the shopping list page. This made the CSS as simple as possible without compromising on each pages needs. 
 
