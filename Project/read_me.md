@@ -98,6 +98,16 @@ I will to design and make a web based social media site for a client who is a hi
 
 
 # Criteria C: Development
+## Existing Tools
+
+| Software/Development Tools | Coding Structure Tools          | Libraries      |
+|----------------------------|---------------------------------|----------------|
+| PyCharm                    |Encryption                       | Flas           |
+| Relational databases       | Objects, attributes and methods | sqlite3        |
+| SQLite                     | If statements                   | passlib        |
+| Python                     |                                 |                |
+
+
 
 ```.py
 from my_lib import database_worker, encrpyt_password, check_password
@@ -161,5 +171,84 @@ if request.cookies.get('user_id'):
 ```
 For each web route, I made sure to request the cookies from the user. This made sure that the user was already logged in and has a cookie. This means that even if someone knows the url of the website and they input the url into their search bar,they are not able to access it. This increases the security of the whole website as people need to have had accounts made and have to login as normal.
 
+```.css
+body {
+  background-color: #FCEADE;
+  background-image: url("/static/Cooking-Home-Collection.jpeg");
+  background-size: cover;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgba(252, 234, 222, 1);
+}
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cccccc;
+}
 
+div a {
+  color: #333333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+div form {
+  display: flex;
+  align-items: center;
+}
+
+div form input[type="text"] {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+div form button[type="submit"] {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+table th {
+  text-align: left;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+}
+
+table td {
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+
+table td a {
+  color: #333333;
+  text-decoration: none;
+}
+
+table td a:hover {
+  text-decoration: underline;
+}
+table td:first-child {
+  color: red;
+}
+
+```
+This is the CSS file for my 
 
