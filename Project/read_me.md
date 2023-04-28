@@ -106,13 +106,45 @@ I will to design and make a web based social media site for a client who is a hi
 | Relational databases       | Objects, attributes and methods | sqlite3        |
 | SQLite                     | If statements                   | passlib        |
 | Python                     |                                 |                |
+| Chat GPT                   |                                 |                | 
 
 
+
+
+## Pattern recognition
 
 ```.py
 from my_lib import database_worker, encrpyt_password, check_password
 ```
 I made this to simplify my code. Creating this function means that every time i have to save something to a database, I am able to just call the function instead of writing it all out every single time. Additionally, if I need to change something I only have one point to change. This is an example of the computational thinking skill pattern recognition as I was able to see that this is something that is repeated throughout. Additionally, it also shows algorithm design as I used an algorithm that enabled me to do the exact same things many times. 
+
+## Pattern generalization and abstraction
+```.py
+@app.route('/shopping_list/<int:user_id>/<int:post_id>', methods=['GET'])
+def shopping_list(user_id, post_id):
+    if request.cookies.get('user_id'):
+        db = database_worker("social_net.db")
+        post = db.search(f"SELECT * FROM posts WHERE id = {post_id}")[0]
+        ingredients = post[3].split(",")
+        for ingredient in ingredients:
+            new_ingredients = f"INSERT INTO ingredients (user_id, ingredients) VALUES ({user_id}, '{ingredient}')"
+            db.run_save(new_ingredients)
+        return redirect(url_for('shopping_list2',user_id=user_id))
+    else:
+        return redirect('login')
+
+@app.route('/shopping_list2/<int:user_id>')
+def shopping_list2(user_id):
+    if request.cookies.get('user_id'):
+        db = database_worker("social_net.db")
+        ingredients = db.search(f"SELECT * FROM ingredients WHERE user_id = {user_id}")
+        db.close()
+        return render_template("shoppiing_list.html", ingredients=ingredients)
+    else:
+        return redirect('login')
+        
+```
+The above code shows how I used the computation thinking skills pattern generalization and abstraction and also decomposition in the code for the shopping list. I split the shopping list into two parts, making sure to only take the information that is only necessary for each one. For the first I made sure to get the post id and the user id for the shopping list url as I needed to add data to the database. Having the post id made it easy for me to do that. However, if I had the post id, it would be hard to show all of the ingredients as it would be post sensitive. Therefore, I made a second method without the post_id that showed all of the ingredients. Therefore, this shows how I only used the variables that were only needed and how I disregarded the ones that weren't important.
 
 ```.py
 <!DOCTYPE html>
