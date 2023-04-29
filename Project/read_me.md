@@ -211,6 +211,7 @@ This part of the code was particularly challenging as I had to figure out how to
 ```.py
 @app.route('/new_post', methods=['GET','POST'])
 def new_post():
+    msg = ""
     if request.cookies.get('user_id'):
         user_id = request.cookies.get('user_id')
         db = database_worker("social_net.db")
@@ -218,16 +219,20 @@ def new_post():
             title = request.form['title']
             content = request.form['content']
             ingredients = request.form['ingredients']
-            if len(title) > 0 and len(content) > 0:
+            if len(title) > 0 and len(content) > 0 and len(ingredients)>0:
                 new_post = f"INSERT into posts (title, content, ingredients, user_id) values('{title}','{content}','{ingredients}',{user_id})"
                 db.run_save(query=new_post)
                 posts = db.search("Select * FROM posts")
                 return redirect(url_for('home', posts = posts ))
-        return render_template("new_posts.html")
+            else:
+                msg = "Please enter title, content and ingredients"
+                return render_template("new_posts.html", message=msg)
+        return render_template("new_posts.html", message=msg)
     else:
         return redirect('login')
 ```
 With the above code, I created an algorithim for the user so that they are able to upload new posts to the social media site. I made sure to have a step by step solution for the user so that they are able to upload their posts. Additionally, I make sure to make it case-sensitive. THe user, like in all the other pages needs to be logged in to be able to access it preventing unauthorized access.  
+One other thing that I included in this code was user input validation. I made sure that each post was being inputted with the right amount of data, with the title, content and ingredients all there so that they wouldn't be posting empty posts
 
 ## Base.html
 ```.html
