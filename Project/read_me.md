@@ -112,6 +112,14 @@ I will to design and make a web based social media site for a client who is a hi
 | Python                     |                                 |                |
 | Chat GPT                   |                                 |                | 
 
+## List of techniques used
+1. Flask library
+2. For loops
+3. If statements
+4. Password hashing
+5. Interacting with databases
+6. Lists
+7. Cookies
 
 ## Decomposition
 
