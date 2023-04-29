@@ -205,7 +205,7 @@ def shopping_list2(user_id):
 ```
 The above code shows how I used the computation thinking skills pattern generalization and abstraction and also decomposition in the code for the shopping list. I split the shopping list into two parts, making sure to only take the information that is only necessary for each one. For the first I made sure to get the post id and the user id for the shopping list url as I needed to add data to the database. Having the post id made it easy for me to do that. However, if I had the post id, it would be hard to show all of the ingredients as it would be post sensitive. Therefore, I made a second method without the post_id that showed all of the ingredients. Therefore, this shows how I only used the variables that were only needed and how I disregarded the ones that weren't important.
 
-This part of the code was particularly challenging as I had to figure out how to both upload the posts to the database, and at the same time, show all the posts ingredients. This led me to splitting them into to routes as one needed the postid and the other didn't. 
+This part of the code was particularly challenging as I had to figure out how to both upload the posts to the database, and at the same time, show all the posts ingredients. This led me to splitting them into to routes as one needed the postid and the other didn't. This was required by the client so that they could have a built in shopping list. 
 
 ## Algorithim design
 ```.py
