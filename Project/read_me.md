@@ -43,6 +43,18 @@ I will to design and make a web based social media site for a client who is a hi
 ## ER diagram
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_ER_diagram.jpg)
 
+| id | Email          | Password      |
+|----------------------------|---------------------------------|----------------|
+|1	|kai@icloud.com |$5$rounds=30000$GeacpgiixTRHUfj6$edv.zYRWn4ZxkcaaS0CKGA1ZunLzBNjwtKM2czahj9B | 
+
+| id | Title	| Content	| Ingredients	| User_id | 
+|--------|----------------|--------------------|---------------|-------| 
+|1	| Banana bread | Easy banana bread  | Bananas 2, Eggs 1, Sugar 100g, Salt 5g, Baking powder 10g | 1 | 
+
+|id | Ingredient | User_id | 
+|--------|-----------|-------------| 
+|16 | milk | 2| 
+
 ## UML diagram
 
 
