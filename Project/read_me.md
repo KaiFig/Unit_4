@@ -174,6 +174,8 @@ def shopping_list2(user_id):
 ```
 The above code shows how I used the computation thinking skills pattern generalization and abstraction and also decomposition in the code for the shopping list. I split the shopping list into two parts, making sure to only take the information that is only necessary for each one. For the first I made sure to get the post id and the user id for the shopping list url as I needed to add data to the database. Having the post id made it easy for me to do that. However, if I had the post id, it would be hard to show all of the ingredients as it would be post sensitive. Therefore, I made a second method without the post_id that showed all of the ingredients. Therefore, this shows how I only used the variables that were only needed and how I disregarded the ones that weren't important.
 
+This part of the code was particularly challenging as I had to figure out how to both upload the posts to the database, and at the same time, show all the posts ingredients. This led me to splitting them into to routes as one needed the postid and the other didn't. 
+
 ## Algorithim design
 ```.py
 @app.route('/new_post', methods=['GET','POST'])
@@ -356,3 +358,44 @@ def delete_ingredient(ingredient_id):
         return redirect('login')
 ```
 At first, I was not sure how to delete the items from the shopping list. This is because I needed a way to access each indvidual ingredient in the shopping list database and select their id. Therefore, to do this, I used the same technique we did in the users page in class, and in my home page. For each ingredient that I showed in the table, I managed to get their ids. Then I would be able to get the id whenver I wanted and then connect to the database to delete the item from it. 
+
+```.html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping list</title>
+    <link rel="stylesheet" href="/static/shopping_list.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("home") }}"> Homepage</a>
+</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Ingredients</th>
+				<th>Check</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for ingredient in ingredients %}
+			<tr>
+				<td>{{ ingredient[2] }}</td>
+				<td>{{ ingredient[1] }}</td>
+				<td>
+                    <form action="{{ url_for('delete_ingredient', ingredient_id=ingredient[0]) }}" method="post">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit">Delete</button>
+                    </form>
+                </td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
+
+```
+The above piece of code is my shopping list page. I followed the same format as my home page, creating a table by looping throuh each ingredient in the shopping list database. Then I made sure to include the delete function which enabled users to delete their items once they bought it which was very important as without it, it would be very impractical. 
