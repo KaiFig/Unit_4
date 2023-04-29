@@ -430,3 +430,20 @@ At first, I was not sure how to delete the items from the shopping list. This is
 
 ```
 The above piece of code is my shopping list page. I followed the same format as my home page, creating a table by looping throuh each ingredient in the shopping list database. Then I made sure to include the delete function which enabled users to delete their items once they bought it which was very important as without it, it would be very impractical. 
+
+```.py
+@app.route('/profile/<user_id>', methods=['GET','POST'])
+def profile(user_id:int):
+    if request.cookies.get('user_id'):
+        db = database_worker("social_net.db")
+        user,posts = None, None
+        user= db.search(f"SELECT * from users where id={user_id}")
+        if user:
+            posts = db.search(f"select * from posts where user_id={user_id}")
+            user = user[0] #remeber db.search returns a list
+        return render_template("profile.html", user=user, posts=posts)
+    else:
+        return redirect('login')
+	
+```
+The above code shows the function for the profile page. This enables the user to view information about themselves, which includes their prior posts. To do this I used databases to save their posts and if statmenets to validate if they were users. This would enable me to showcase their posts for which I used the same format as the home method and called it from the database then displayed it. 
