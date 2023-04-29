@@ -53,6 +53,10 @@ I will to design and make a web based social media site for a client who is a hi
 ## Flowcharts 
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_1.jpg)
 
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_2.jpg)
+
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_3.jpg)
+
 ## Record of Tasks
 
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
