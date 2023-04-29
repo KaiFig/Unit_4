@@ -230,7 +230,7 @@ def new_post():
 With the above code, I created an algorithim for the user so that they are able to upload new posts to the social media site. I made sure to have a step by step solution for the user so that they are able to upload their posts. Additionally, I make sure to make it case-sensitive. THe user, like in all the other pages needs to be logged in to be able to access it preventing unauthorized access.  
 
 ## Base.html
-```.py
+```.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -390,6 +390,8 @@ def delete_ingredient(ingredient_id):
 ```
 At first, I was not sure how to delete the items from the shopping list. This is because I needed a way to access each indvidual ingredient in the shopping list database and select their id. Therefore, to do this, I used the same technique we did in the users page in class, and in my home page. For each ingredient that I showed in the table, I managed to get their ids. Then I would be able to get the id whenver I wanted and then connect to the database to delete the item from it. 
 
+## Shopping_list.html 
+
 ```.html
 <!DOCTYPE html>
 <html>
@@ -431,6 +433,7 @@ At first, I was not sure how to delete the items from the shopping list. This is
 ```
 The above piece of code is my shopping list page. I followed the same format as my home page, creating a table by looping throuh each ingredient in the shopping list database. Then I made sure to include the delete function which enabled users to delete their items once they bought it which was very important as without it, it would be very impractical. 
 
+## Profile
 ```.py
 @app.route('/profile/<user_id>', methods=['GET','POST'])
 def profile(user_id:int):
@@ -447,3 +450,47 @@ def profile(user_id:int):
 	
 ```
 The above code shows the function for the profile page. This enables the user to view information about themselves, which includes their prior posts. To do this I used databases to save their posts and if statmenets to validate if they were users. This would enable me to showcase their posts for which I used the same format as the home method and called it from the database then displayed it. 
+
+## profile.html
+```.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("home") }}"> Homepage</a>
+</div>
+
+{% if user %}
+    <h1>Welcome, {{ user[1] }}</h1>
+    {% if posts|length > 0 %}
+    <p>Your posts are:</p>
+    <table>
+    <tr>
+        <th>id</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+        {# template language jinja2 #}
+    {% for p in posts %}
+    <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1].title() }}</td>
+        <td>{{ p[2] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+        <p>You don't have posts yet</p>
+    {% endif %}
+    {% else %}
+    <h1> User does not exist</h1>
+{%  endif %}
+</body>
+</html>
+
+```
+The above code shows my HTML for my profile page. This enables the user to view their own profile, and I coded python in the HTML page so that I could adjust what message appears in the final HTML rendering. This makes the code much simpler as it's not going through the python file and it's in the HTML. 
