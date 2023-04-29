@@ -40,8 +40,12 @@ I will to design and make a web based social media site for a client who is a hi
 ## System diagram
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_system_diagram.jpg)
 
+**Fig 2** This shows the system diagram for my project. All the files that I had in pycharm and the database "social_net.db" that I used to store all of the data. This was all done with flask and was displayed in safari on my macbookair 
+
 ## ER diagram
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_ER_diagram.jpg)
+
+**Fig 3** This shows the ER diagram for my project showing how each table in the database is structured and what is in it 
 
 | id | Email          | Password      |
 |----------------------------|---------------------------------|----------------|
@@ -55,19 +59,22 @@ I will to design and make a web based social media site for a client who is a hi
 |--------|-----------|-------------| 
 |16 | milk | 2| 
 
-## UML diagram
-
-
-
 ## Wireframe diagram 
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_wireframe.jpg)
+
+**Fig  4** This shows the wireframe for my project. Before starting the code, I tried to visualize how my website would look as then I would be able to design it much easier and I was able to show this to the client for feedback 
 
 ## Flowcharts 
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_1.jpg)
 
+**Fig 5** The first flowchart shows my login page
+
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_2.jpg)
 
+**Fig 6** The second flowchart shows my home page
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_3.jpg)
+
+**Fig 7** The third flowchart shows my shopping list function 
 
 ## Record of Tasks
 
