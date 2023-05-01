@@ -80,31 +80,31 @@ I will to design and make a web based social media site for a client who is a hi
 
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
 |---------|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------|------------------------|-----------|
-| 1       | Meeting my client                         | To identify what my client wants for a database  | 15min         | Apr 8th               | A         |
-| 2       | Write the Problem defition                        | Expand our problem context and identify a customer and their specific problem so that we know what we need to acheive with our project  |  20min         | Apr 8th          | A         |
-|3       | Write the proposed solution and rationale for propsed solution  | My client is able to see what I am creating as a solution and input feedback so that he gets what he wants |50 min | Apr 8th    | A     | 
-|4       | Write the design statement | Able to proceed with a clear plan and goal now that the design statement is written    | 10 min  | Apr 8th  | A |
-|5       | Write each success criteria  | Have a clear outline of what is needed to be acheived for my client so I am able to fulfill the clients needs   | 20 min | Apr 8th | A  |
-|6       | Create the system diagram  | Can showcase what the whole SNS will look like and what files and programs it will run  | 30 min  | Apr 9th | B  | 
-|7       | Create the wireframe diagram  | We can showcase what the SNS will look like, and i have a plan for how to style it using HTML and CSS | 45 min  | Apr 14th | B   | 
-|8      | Create the database   | I have a database so that each user is able to have their own account and they are able to have a record of posts   | 20 min | Apr 15th | C | 
-|9      | Create the login page  | I create the functionality for the login page, enabling each user to have their own account, and their posts to be linked back to them   | 30 min  | Apr 16th | C | 
-|10     | Create the signup page | This enables users to signup to the application, making sure that their passwords are long and strong enough   | 30 min | Apr 16th  | C | 
-|11     | Create the home page  | This will be the first screen that the user encounters when they login to the application   | 30 min  | Apr 16th | C | 
-|12     | Create the new posts page   | This enables each user to add a post to the Social media site, with their recipe and other important information. Additionally, it will be linked back to the user  | 30 min  | Apr 16th | C | 
-|13     | Create the css for the signup page  | It makes everything look much better and the user is able to have a better user experience | 30 min   | Apr 16th  | C   | 
-|14     | Create the css for the login and new posts page   | Better user experience  | 30 min  | Apr 16th  | C | 
-|15     | Create the css for home page  | Better user experience  | 30 min  | Apr 16th  | C | 
-|16     | Create the search bar   | It enables the user to search the database for a recipe with a specific ingredient so that they can base their recipes on what they have | 45 min   | Apr 17th  | C | 
-|17     | Create the flow diagrams for an interesting function  | I am able to showcase to everyone how my code works so that they are able to further develop on it  | 45 min  | Apr 17th | B | 
-|18     | Create the profile page in the website   | The user is able to have their own profile page where they are able to see all their posts   | 45 min  | Apr 17th  | C | 
-|19     | Create the shopping list page in the database | This saves the users ingredients that they click on   | 20 min  | Apr 18th  | C | 
-|20     | Create the shopping list page in the website  | The user is able to see each ingredient that they saved   | 1 hr 30 min  | Apr 19th  | C  | 
-|21     | Update the record of tasks    | I have already done a few unit tests so this enables me to give a record of them  | 20 min | Apr 19th  | C | 
-|22     | Test the login and signup pages   | I make sure that the user is able to login and signup into the website and that all the error messages work | 20 min | Apr 20th | C |
-|23     | Fix the search and sql queries | The user can search the database with a specific recipe and it returns everything. Also the search bar works more than once  | 1 hr  | Apr 21st | C  | 
-|24     | Complete the UML diagram | I show the relations between all the classes in the website so that other people viewing the code understand it | 20 min   | Apr 21st | B  | 
-|25     | Better the CSS for each page  | The UI is much more improved and users are able to enjoy a website that looks nice    | 45 min    | Apr 21st  | 
+| 1       | Planning: Meeting my client                         | To identify what my client wants for a database  | 15min         | Apr 8th               | A         |
+| 2       | Planning: Write the Problem defition                        | Expand our problem context and identify a customer and their specific problem so that we know what we need to acheive with our project  |  20min         | Apr 8th          | A         |
+|3       | Planning: Write the proposed solution and rationale for propsed solution  | My client is able to see what I am creating as a solution and input feedback so that he gets what he wants |50 min | Apr 8th    | A     | 
+|4       | Planning: Write the design statement | Able to proceed with a clear plan and goal now that the design statement is written    | 10 min  | Apr 8th  | A |
+|5       | Planning: Write each success criteria  | Have a clear outline of what is needed to be acheived for my client so I am able to fulfill the clients needs   | 20 min | Apr 8th | A  |
+|6       | Design: Create the system diagram  | Can showcase what the whole SNS will look like and what files and programs it will run  | 30 min  | Apr 9th | B  | 
+|7       | Design: Create the wireframe diagram  | We can showcase what the SNS will look like, and i have a plan for how to style it using HTML and CSS | 45 min  | Apr 14th | B   | 
+|8      | Development: Create the database   | I have a database so that each user is able to have their own account and they are able to have a record of posts   | 20 min | Apr 15th | C | 
+|9      | Development: Create the login page  | I create the functionality for the login page, enabling each user to have their own account, and their posts to be linked back to them   | 30 min  | Apr 16th | C | 
+|10     | Development: Create the signup page | This enables users to signup to the application, making sure that their passwords are long and strong enough   | 30 min | Apr 16th  | C | 
+|11     | Development: Create the home page  | This will be the first screen that the user encounters when they login to the application   | 30 min  | Apr 16th | C | 
+|12     | Development: Create the new posts page   | This enables each user to add a post to the Social media site, with their recipe and other important information. Additionally, it will be linked back to the user  | 30 min  | Apr 16th | C | 
+|13     | Development: Create the css for the signup page  | It makes everything look much better and the user is able to have a better user experience | 30 min   | Apr 16th  | C   | 
+|14     | Development: Create the css for the login and new posts page   | Better user experience  | 30 min  | Apr 16th  | C | 
+|15     | Development: Create the css for home page  | Better user experience  | 30 min  | Apr 16th  | C | 
+|16     | Development: Create the search bar   | It enables the user to search the database for a recipe with a specific ingredient so that they can base their recipes on what they have | 45 min   | Apr 17th  | C | 
+|17     | Design: Create the flow diagrams for an interesting function  | I am able to showcase to everyone how my code works so that they are able to further develop on it  | 45 min  | Apr 17th | B | 
+|18     | Development: Create the profile page in the website   | The user is able to have their own profile page where they are able to see all their posts   | 45 min  | Apr 17th  | C | 
+|19     | Development: Create the shopping list page in the database | This saves the users ingredients that they click on   | 20 min  | Apr 18th  | C | 
+|20     | Development: Create the shopping list page in the website  | The user is able to see each ingredient that they saved   | 1 hr 30 min  | Apr 19th  | C  | 
+|21     | Design: Update the record of tasks    | I have already done a few unit tests so this enables me to give a record of them  | 20 min | Apr 19th  | C | 
+|22     | Evaluation: Test the login and signup pages   | I make sure that the user is able to login and signup into the website and that all the error messages work | 20 min | Apr 20th | C |
+|23     | Development: Fix the search and sql queries | The user can search the database with a specific recipe and it returns everything. Also the search bar works more than once  | 1 hr  | Apr 21st | C  | 
+|24     | Design: Complete the UML diagram | I show the relations between all the classes in the website so that other people viewing the code understand it | 20 min   | Apr 21st | B  | 
+|25     | Development: Better the CSS for each page  | The UI is much more improved and users are able to enjoy a website that looks nice    | 45 min    | Apr 21st  | 
 
 
 
@@ -140,7 +140,7 @@ I will to design and make a web based social media site for a client who is a hi
 6. Lists
 7. Cookies
 
-## Decomposition
+## login 
 
 ```.py
 
