@@ -499,3 +499,8 @@ The above code shows the function for the profile page. This enables the user to
 
 ```
 The above code shows my HTML for my profile page. This enables the user to view their own profile, and I coded python in the HTML page so that I could adjust what message appears in the final HTML rendering. This makes the code much simpler as it's not going through the python file and it's in the HTML. 
+
+# Critieria E: Evaluation
+
+| Critieria | Met or not?        | Feedback       |
+|----------------------------|---------------------------------|----------------|
