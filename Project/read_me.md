@@ -221,15 +221,75 @@ def signup():
     
 The above code shows the computational thinking skill of decomposition in the code for my login page. I first see if the user is actually trying to login. Then, I get all the inputs from the webpatge, then connect to the database. After I send the sql query and I validate the user. If the user is accurate, I check the password then if the password is correct, I send them to the homepage. This shows decomposition as I split this problem into many smaller pieces, how to get the items, how to validate etc. 
 
-
-## Pattern recognition
+## Success Criteria number 3 and 5
+For these 2 success criteria, there were two main issues. First was getting all of the posts from the database, then displaying them in the homepage for the user to see. Then the other problem was that I had to search the database for a specific ingredient and then display only the posts that applied to the statement. The first one was not as challenging, however the second was quite a challenge. 
 
 ```.py
-from my_lib import database_worker, encrpyt_password, check_password
-```
-I made this to simplify my code. Creating this function means that every time i have to save something to a database, I am able to just call the function instead of writing it all out every single time. Additionally, if I need to change something I only have one point to change. This is an example of the computational thinking skill pattern recognition as I was able to see that this is something that is repeated throughout. Additionally, it also shows algorithm design as I used an algorithm that enabled me to do the exact same things many times. 
+@app.route('/home', methods=['GET','POST'])
+def home():
+    if request.cookies.get('user_id'):
+        user_id = request.cookies.get('user_id')
+        db = database_worker("social_net.db")
+        posts = db.search("Select * FROM posts")
+        if request.method=='POST':
+            search_query = request.form['query']
+            posts2 = db.search(f"SELECT * FROM posts WHERE ingredients like '%{search_query}%' ")
+            return render_template("home.html", posts=posts2, user_id = user_id)
 
-## Pattern generalization and abstraction
+        return render_template("home.html", posts=posts, user_id = user_id)
+
+    else:
+        return redirect('login')
+    return render_template("home.html", posts=posts, user_id = user_id)
+
+```
+```.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Welcome to the most popular SNS</title>
+    {% endif %}
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("shopping_list2", user_id = user_id) }}"> Shopping List </a>
+    <a href = "{{ url_for("new_post") }}">Create a new post</a>
+    <a href = "{{ url_for ("logout") }}"> Logout</a>
+    <a href="{{ url_for('profile', user_id=user_id) }}" class="btn btn-primary">Profile</a>
+    <form action="/home" method="post">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+</div>
+
+<table>
+    <tr>
+        <th>id (Click to add ingredients to shopping list)</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Ingredients</th>
+    </tr>
+        {# template language jinja2 #}
+    {% for p in posts %}
+    <tr>
+        <td><a href = "{{ url_for('shopping_list', user_id=p[4], post_id=p[0]) }}">{{ p[0] }}</a></td>
+        <td>{{ p[1].title() }}</td>
+        <td>{{ p[2] }}</td>
+        <td>{{ p[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
+```
+## Success criteria number 4
 ```.py
 @app.route('/shopping_list/<int:user_id>/<int:post_id>', methods=['GET'])
 def shopping_list(user_id, post_id):
@@ -258,6 +318,76 @@ def shopping_list2(user_id):
 The above code shows how I used the computation thinking skills pattern generalization and abstraction and also decomposition in the code for the shopping list. I split the shopping list into two parts, making sure to only take the information that is only necessary for each one. For the first I made sure to get the post id and the user id for the shopping list url as I needed to add data to the database. Having the post id made it easy for me to do that. However, if I had the post id, it would be hard to show all of the ingredients as it would be post sensitive. Therefore, I made a second method without the post_id that showed all of the ingredients. Therefore, this shows how I only used the variables that were only needed and how I disregarded the ones that weren't important.
 
 This part of the code was particularly challenging as I had to figure out how to both upload the posts to the database, and at the same time, show all the posts ingredients. This led me to splitting them into to routes as one needed the postid and the other didn't. This was required by the client so that they could have a built in shopping list. 
+
+## Success criteria number 6
+```.py
+@app.route('/profile/<user_id>', methods=['GET','POST'])
+def profile(user_id:int):
+    if request.cookies.get('user_id'):
+        db = database_worker("social_net.db")
+        user,posts = None, None
+        user= db.search(f"SELECT * from users where id={user_id}")
+        if user:
+            posts = db.search(f"select * from posts where user_id={user_id}")
+            user = user[0] #remeber db.search returns a list
+        return render_template("profile.html", user=user, posts=posts)
+    else:
+        return redirect('login')
+	
+```
+The above code shows the function for the profile page. This enables the user to view information about themselves, which includes their prior posts. To do this I used databases to save their posts and if statmenets to validate if they were users. This would enable me to showcase their posts for which I used the same format as the home method and called it from the database then displayed it. 
+
+```.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("home") }}"> Homepage</a>
+</div>
+
+{% if user %}
+    <h1>Welcome, {{ user[1] }}</h1>
+    {% if posts|length > 0 %}
+    <p>Your posts are:</p>
+    <table>
+    <tr>
+        <th>id</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+        {# template language jinja2 #}
+    {% for p in posts %}
+    <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1].title() }}</td>
+        <td>{{ p[2] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+        <p>You don't have posts yet</p>
+    {% endif %}
+    {% else %}
+    <h1> User does not exist</h1>
+{%  endif %}
+</body>
+</html>
+
+```
+The above code shows my HTML for my profile page. This enables the user to view their own profile, and I coded python in the HTML page so that I could adjust what message appears in the final HTML rendering. This makes the code much simpler as it's not going through the python file and it's in the HTML. 
+ 
+## Pattern recognition
+
+```.py
+from my_lib import database_worker, encrpyt_password, check_password
+```
+I made this to simplify my code. Creating this function means that every time i have to save something to a database, I am able to just call the function instead of writing it all out every single time. Additionally, if I need to change something I only have one point to change. This is an example of the computational thinking skill pattern recognition as I was able to see that this is something that is repeated throughout. Additionally, it also shows algorithm design as I used an algorithm that enabled me to do the exact same things many times. 
+
+
 
 ## Base.html
 ```.html
@@ -463,67 +593,7 @@ At first, I was not sure how to delete the items from the shopping list. This is
 ```
 The above piece of code is my shopping list page. I followed the same format as my home page, creating a table by looping throuh each ingredient in the shopping list database. Then I made sure to include the delete function which enabled users to delete their items once they bought it which was very important as without it, it would be very impractical. 
 
-## Profile
-```.py
-@app.route('/profile/<user_id>', methods=['GET','POST'])
-def profile(user_id:int):
-    if request.cookies.get('user_id'):
-        db = database_worker("social_net.db")
-        user,posts = None, None
-        user= db.search(f"SELECT * from users where id={user_id}")
-        if user:
-            posts = db.search(f"select * from posts where user_id={user_id}")
-            user = user[0] #remeber db.search returns a list
-        return render_template("profile.html", user=user, posts=posts)
-    else:
-        return redirect('login')
-	
-```
-The above code shows the function for the profile page. This enables the user to view information about themselves, which includes their prior posts. To do this I used databases to save their posts and if statmenets to validate if they were users. This would enable me to showcase their posts for which I used the same format as the home method and called it from the database then displayed it. 
 
-## profile.html
-```.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/static/home.css">
-</head>
-<body>
-<div>
-    <a href = "{{ url_for("home") }}"> Homepage</a>
-</div>
-
-{% if user %}
-    <h1>Welcome, {{ user[1] }}</h1>
-    {% if posts|length > 0 %}
-    <p>Your posts are:</p>
-    <table>
-    <tr>
-        <th>id</th>
-        <th>Title</th>
-        <th>Content</th>
-    </tr>
-        {# template language jinja2 #}
-    {% for p in posts %}
-    <tr>
-        <td>{{ p[0] }}</td>
-        <td>{{ p[1].title() }}</td>
-        <td>{{ p[2] }}</td>
-    </tr>
-    {% endfor %}
-    </table>
-    {% else %}
-        <p>You don't have posts yet</p>
-    {% endif %}
-    {% else %}
-    <h1> User does not exist</h1>
-{%  endif %}
-</body>
-</html>
-
-```
-The above code shows my HTML for my profile page. This enables the user to view their own profile, and I coded python in the HTML page so that I could adjust what message appears in the final HTML rendering. This makes the code much simpler as it's not going through the python file and it's in the HTML. 
 
 # Critieria E: Evaluation
 
