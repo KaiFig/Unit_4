@@ -140,7 +140,37 @@ I will to design and make a web based social media site for a client who is a hi
 6. Lists
 7. Cookies
 
-## login 
+
+## Success criteria 1 
+```.py
+@app.route('/new_post', methods=['GET','POST'])
+def new_post():
+    msg = ""
+    if request.cookies.get('user_id'):
+        user_id = request.cookies.get('user_id')
+        db = database_worker("social_net.db")
+        if request.method == 'POST':
+            title = request.form['title']
+            content = request.form['content']
+            ingredients = request.form['ingredients']
+            if len(title) > 0 and len(content) > 0 and len(ingredients)>0:
+                new_post = f"INSERT into posts (title, content, ingredients, user_id) values('{title}','{content}','{ingredients}',{user_id})"
+                db.run_save(query=new_post)
+                posts = db.search("Select * FROM posts")
+                return redirect(url_for('home', posts = posts ))
+            else:
+                msg = "Please enter title, content and ingredients"
+                return render_template("new_posts.html", message=msg)
+        return render_template("new_posts.html", message=msg)
+    else:
+        return redirect('login')
+```
+With the above code, I created an algorithim for the user so that they are able to upload new posts to the social media site. I made sure to have a step by step solution for the user so that they are able to upload their posts. Additionally, I make sure to make it case-sensitive. THe user, like in all the other pages needs to be logged in to be able to access it preventing unauthorized access.  
+One other thing that I included in this code was user input validation. I made sure that each post was being inputted with the right amount of data, with the title, content and ingredients all there so that they wouldn't be posting empty posts
+
+
+## Success criteria 2
+For this 
 
 ```.py
 
@@ -167,6 +197,28 @@ def login():
             msg = "user does not exist"
     return render_template("login.html", message=msg)
 ```
+
+
+```.py
+@app.route('/signup', methods=["GET","POST"])
+def signup():
+    msg = ""
+    if request.method == "POST":
+        email = request.form['email']
+        passwd=request.form['passwd']
+        passwdconfirm=request.form['confirmpasswd']
+        if passwd==passwdconfirm:
+            hash = encrpyt_password(passwd)
+            db = database_worker("social_net.db")
+            new_post = f"INSERT into users (email,password) values('{email}','{hash}')"
+            db.run_save(query=new_post)
+            return redirect(url_for('login'))
+        else:
+            msg = "Passwords do not match"
+    return render_template("signup.html", message=msg)
+    
+```
+    
 The above code shows the computational thinking skill of decomposition in the code for my login page. I first see if the user is actually trying to login. Then, I get all the inputs from the webpatge, then connect to the database. After I send the sql query and I validate the user. If the user is accurate, I check the password then if the password is correct, I send them to the homepage. This shows decomposition as I split this problem into many smaller pieces, how to get the items, how to validate etc. 
 
 
@@ -206,33 +258,6 @@ def shopping_list2(user_id):
 The above code shows how I used the computation thinking skills pattern generalization and abstraction and also decomposition in the code for the shopping list. I split the shopping list into two parts, making sure to only take the information that is only necessary for each one. For the first I made sure to get the post id and the user id for the shopping list url as I needed to add data to the database. Having the post id made it easy for me to do that. However, if I had the post id, it would be hard to show all of the ingredients as it would be post sensitive. Therefore, I made a second method without the post_id that showed all of the ingredients. Therefore, this shows how I only used the variables that were only needed and how I disregarded the ones that weren't important.
 
 This part of the code was particularly challenging as I had to figure out how to both upload the posts to the database, and at the same time, show all the posts ingredients. This led me to splitting them into to routes as one needed the postid and the other didn't. This was required by the client so that they could have a built in shopping list. 
-
-## Algorithim design
-```.py
-@app.route('/new_post', methods=['GET','POST'])
-def new_post():
-    msg = ""
-    if request.cookies.get('user_id'):
-        user_id = request.cookies.get('user_id')
-        db = database_worker("social_net.db")
-        if request.method == 'POST':
-            title = request.form['title']
-            content = request.form['content']
-            ingredients = request.form['ingredients']
-            if len(title) > 0 and len(content) > 0 and len(ingredients)>0:
-                new_post = f"INSERT into posts (title, content, ingredients, user_id) values('{title}','{content}','{ingredients}',{user_id})"
-                db.run_save(query=new_post)
-                posts = db.search("Select * FROM posts")
-                return redirect(url_for('home', posts = posts ))
-            else:
-                msg = "Please enter title, content and ingredients"
-                return render_template("new_posts.html", message=msg)
-        return render_template("new_posts.html", message=msg)
-    else:
-        return redirect('login')
-```
-With the above code, I created an algorithim for the user so that they are able to upload new posts to the social media site. I made sure to have a step by step solution for the user so that they are able to upload their posts. Additionally, I make sure to make it case-sensitive. THe user, like in all the other pages needs to be logged in to be able to access it preventing unauthorized access.  
-One other thing that I included in this code was user input validation. I made sure that each post was being inputted with the right amount of data, with the title, content and ingredients all there so that they wouldn't be posting empty posts
 
 ## Base.html
 ```.html
