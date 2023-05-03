@@ -142,14 +142,17 @@ I will to design and make a web based social media site for a client who is a hi
 
 
 ## Success criteria 1 
+
+The first success criteria was that the user would be able to post on the website. To do this, I had to work through several things. I split this into 3 sections, getting the information from the UI, then validating it, and then I uploaded it into the database. Althoguh it seemed simple, I wasn't sure how everything would work so the biggest challenge was taking all the skills and putting them together. 
+
 ```.py
-@app.route('/new_post', methods=['GET','POST'])
+@app.route('/new_post', methods=['GET','POST']) # For the user to upload posts
 def new_post():
     msg = ""
-    if request.cookies.get('user_id'):
-        user_id = request.cookies.get('user_id')
+    if request.cookies.get('user_id'): #Validate the user 
+        user_id = request.cookies.get('user_id') #Get the user_id of the user
         db = database_worker("social_net.db")
-        if request.method == 'POST':
+        if request.method == 'POST': #Check if the form is being submittted 
             title = request.form['title']
             content = request.form['content']
             ingredients = request.form['ingredients']
@@ -160,17 +163,17 @@ def new_post():
                 return redirect(url_for('home', posts = posts ))
             else:
                 msg = "Please enter title, content and ingredients"
-                return render_template("new_posts.html", message=msg)
+                return render_template("new_posts.html", message=msg) # Can display an error message 
         return render_template("new_posts.html", message=msg)
     else:
         return redirect('login')
 ```
-With the above code, I created an algorithim for the user so that they are able to upload new posts to the social media site. I made sure to have a step by step solution for the user so that they are able to upload their posts. Additionally, I make sure to make it case-sensitive. THe user, like in all the other pages needs to be logged in to be able to access it preventing unauthorized access.  
-One other thing that I included in this code was user input validation. I made sure that each post was being inputted with the right amount of data, with the title, content and ingredients all there so that they wouldn't be posting empty posts
+With the above code, I created an algorithim for the user so that they are able to upload new posts to the social media site. I made sure to have a step by step solution for the user so that they are able to upload their posts. First, I make sure to validate the user as like in all the other pages needs to be logged in to be able to access it preventing unauthorized access. Then I check which method it is, and if the form is being posted, then I get the information from the UI and validate it. After it is validated, I connet to the database using the database_worker function, then insert it into the post page. As I wanted the user to get redirected to the home page again, I had to search the database again by using the database_worker function, searching, then using the return redirect(url_for  ) tool to redirect them to the home page that would display alll the posts including the new one. 
 
+Using the database worker function enables me to simplify my code as it is something that is repeated lots of timees throughout the application (showing patter recognition) as I need to use a database many times. Therefore, makign it into a function makes it much easier to edit is something is worng. 
 
 ## Success criteria 2
-For this 
+For this success criteria I had to create a login page and a signup page for the user. The signup roughly followed the same format as the new_posts page, however I had to call a library to hash the function. For the login, I had to do the same as the new_posts page as well, however, I had to make sure to validate to check if it was right, then redirect them to the home screen. 
 
 ```.py
 
@@ -218,31 +221,14 @@ def signup():
     return render_template("signup.html", message=msg)
     
 ```
-    
-The above code shows the computational thinking skill of decomposition in the code for my login page. I first see if the user is actually trying to login. Then, I get all the inputs from the webpatge, then connect to the database. After I send the sql query and I validate the user. If the user is accurate, I check the password then if the password is correct, I send them to the homepage. This shows decomposition as I split this problem into many smaller pieces, how to get the items, how to validate etc. 
+For the signup page, I follow the same process as the new_posts page. However, on this page, I do not find the cookie for the user as they are still not logged in because its the signup page. Then I check if the method is posts to make sure that the user is trying to signup. Then I get the information from the UI, then i check if the passwords are corrrect. As for the email, in the HTML, I specified the input as an email so it will automatically send an error code if its not a valid email address. If the passwords do not match, it displays an error code and the user has to reinput it. If it does then I first hash the password to make it more secure, to do this I call on a function that I imported from my library called encrypt password. Then I used the database_worker class to insert the information into the users page in the social_net database and redirect them to my login page. 
+
+For the login page, it is slightly more complicated. The first two steps, checking the mthod and getting the information is the same. However, to check that the users email is correct I use the database_worker function to see if the user does exist. If it does, I get the information from that row and then use the check_password function imported from my library to check if the passwords are correct. If everything is good, I first set the cookie for the user so that I am able to use that later. Then I redirect it to the home page by getting all the posts from the post page in the database, then redirecting to the home page. 
+
 
 ## Success Criteria number 3 and 5
 For these 2 success criteria, there were two main issues. First was getting all of the posts from the database, then displaying them in the homepage for the user to see. Then the other problem was that I had to search the database for a specific ingredient and then display only the posts that applied to the statement. The first one was not as challenging, however the second was quite a challenge. 
 
-```.py
-@app.route('/home', methods=['GET','POST'])
-def home():
-    if request.cookies.get('user_id'):
-        user_id = request.cookies.get('user_id')
-        db = database_worker("social_net.db")
-        posts = db.search("Select * FROM posts")
-        if request.method=='POST':
-            search_query = request.form['query']
-            posts2 = db.search(f"SELECT * FROM posts WHERE ingredients like '%{search_query}%' ")
-            return render_template("home.html", posts=posts2, user_id = user_id)
-
-        return render_template("home.html", posts=posts, user_id = user_id)
-
-    else:
-        return redirect('login')
-    return render_template("home.html", posts=posts, user_id = user_id)
-
-```
 ```.html
 <!DOCTYPE html>
 <html lang="en">
@@ -289,7 +275,32 @@ def home():
 </body>
 </html>
 ```
+This first piece of code is for my HTML. For the HTML, I made sure to create a table that would display everything from the posts page. This enables the user to see other users posts. Additionally I made sure to have at the top of the page a menu bar that would take the users to different pages in the application and there is also a search bar so that the user can search for recipes based on ingredients. Lastly, for each post in the table, the ID is made into a link for the shopping list. Therefore, clicking this will enable the user to create their own shopping list in the application. 
+
+```.py
+@app.route('/home', methods=['GET','POST'])
+def home():
+    if request.cookies.get('user_id'):
+        user_id = request.cookies.get('user_id')
+        db = database_worker("social_net.db")
+        posts = db.search("Select * FROM posts")
+        if request.method=='POST':
+            search_query = request.form['query']
+            posts2 = db.search(f"SELECT * FROM posts WHERE ingredients like '%{search_query}%' ")
+            return render_template("home.html", posts=posts2, user_id = user_id)
+
+        return render_template("home.html", posts=posts, user_id = user_id)
+
+    else:
+        return redirect('login')
+    return render_template("home.html", posts=posts, user_id = user_id)
+
+```
+The above code is showcasing the home page python code. First I make sure that the user is logged in as this page is restricted to people who have an accout. Then I just use the database_worker function to get all the posts. However, if the user sends a search request, then I don't get all the posts, instead I use the % signs to get posts that are like the search query and then show those on the page. 
+
+
 ## Success criteria number 4
+For this success criteria, I had to figure out how to let the user have their own shopping list. This was challenging as I had to first for each recipe that the user wanted to have, I needed to add those ingredients into the database. Then I had to show those ingredients into another table. 
 ```.py
 @app.route('/shopping_list/<int:user_id>/<int:post_id>', methods=['GET'])
 def shopping_list(user_id, post_id):
@@ -315,9 +326,10 @@ def shopping_list2(user_id):
         return redirect('login')
         
 ```
+For this code, I continue on from the home page. If the user clicks on the links in the home page table, then I take the user_id but also the post_id. Having the post_id enables me to search for the post that the user wants to add to their shopping list, then get the ingredients from that post. After I get the ingredients I redirect the user to a seperate route. This is because the original shopping list has the post_id which is great for when I need to add the post's ingredients to the database, however, when I'm showing the shopping_list, I don't want it to just be of one post's ingredients but of all of them that the user has inputted. Thereofre the shopping_list2 route only takes the user_id so that I only select the ingredients that are from that user using the database_worker function then I use the render_template to showcase the shopping list. For both pages, I made sure to validate that the user does exist to prevent unauthorized access. 
+
 The above code shows how I used the computation thinking skills pattern generalization and abstraction and also decomposition in the code for the shopping list. I split the shopping list into two parts, making sure to only take the information that is only necessary for each one. For the first I made sure to get the post id and the user id for the shopping list url as I needed to add data to the database. Having the post id made it easy for me to do that. However, if I had the post id, it would be hard to show all of the ingredients as it would be post sensitive. Therefore, I made a second method without the post_id that showed all of the ingredients. Therefore, this shows how I only used the variables that were only needed and how I disregarded the ones that weren't important.
 
-This part of the code was particularly challenging as I had to figure out how to both upload the posts to the database, and at the same time, show all the posts ingredients. This led me to splitting them into to routes as one needed the postid and the other didn't. This was required by the client so that they could have a built in shopping list. 
 
 ## Success criteria number 6
 ```.py
