@@ -609,13 +609,16 @@ The above piece of code is my shopping list page. I followed the same format as 
 
 # Critieria E: Evaluation
 
+## Evaluation table
 | Critieria | Met or not?        | Feedback       |
 |----------------------------|---------------------------------|----------------|
-|1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  |   	 | 		|
-|2. There is a secure login and registration page for each user  | 		| 			| 
-|3. The user can view other social media posts   | 		| 		| 
-|4. Users are able to create their own shopping list in the app  | 		| 			| 
-|5. Users can search recipes based on ingredients  | 		| 			| 
-|6. User can have their own profile page that displays their email and posts.   | 			| 			| 
+|1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  |Met      |Good		|
+|2. There is a secure login and registration page for each user  | 	Met	| Fix the signup button, otherwise good		| 
+|3. The user can view other social media posts   | Met		| Add the names of the people who posted the recipe		| 
+|4. Users are able to create their own shopping list in the app  | Met		| Make how to add more clear since it is quite confusing 			| 
+|5. Users can search recipes based on ingredients  | Met		|Specify that it is search by ingredient 			| 
+|6. User can have their own profile page that displays their email and posts.   | Met			| Make the username a bit more visible			| 
+
+## Suggestions for future development 
 
 
