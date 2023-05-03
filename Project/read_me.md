@@ -611,3 +611,11 @@ The above piece of code is my shopping list page. I followed the same format as 
 
 | Critieria | Met or not?        | Feedback       |
 |----------------------------|---------------------------------|----------------|
+|1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  |   	 | 		|
+|2. There is a secure login and registration page for each user  | 		| 			| 
+|3. The user can view other social media posts   | 		| 		| 
+|4. Users are able to create their own shopping list in the app  | 		| 			| 
+|5. Users can search recipes based on ingredients  | 		| 			| 
+|6. User can have their own profile page that displays their email and posts.   | 			| 			| 
+
+
