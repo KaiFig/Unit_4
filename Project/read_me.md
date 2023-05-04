@@ -619,6 +619,9 @@ The above piece of code is my shopping list page. I followed the same format as 
 |5. Users can search recipes based on ingredients  | Met		|Specify that it is search by ingredient 			| 
 |6. User can have their own profile page that displays their email and posts.   | Met			| Make the username a bit more visible			| 
 
-## Suggestions for future development 
+This was after I showed this to an anonymous student here at my school to get their feedback on the project.
+
+## Suggestions for future development
+
 
 
