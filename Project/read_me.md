@@ -610,10 +610,22 @@ The above piece of code is my shopping list page. I followed the same format as 
 # Critieria E: Evaluation
 
 ## Evaluation table
+
+### Client
+| Critieria | Met or not?        | Feedback       |
+|----------------------------|---------------------------------|----------------|
+|1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  |Met      |Met, no suggestions	|
+|2. There is a secure login and registration page for each user  | 	Met	| Met, no suggestions		| 
+|3. The user can view other social media posts   | Met		| Nice posts, however, could it be possible to have images on each posts to see the recipe  | 
+|4. Users are able to create their own shopping list in the app  | Met		| Make the adding function more intuitive and make the shopping list look a little better| 
+|5. Users can search recipes based on ingredients  | Met		|Specify that it is search by ingredient 			| 
+|6. User can have their own profile page that displays their email and posts.   | Met			| Add a button to the shopping list		| 
+
+### Other user
 | Critieria | Met or not?        | Feedback       |
 |----------------------------|---------------------------------|----------------|
 |1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  |Met      |Good		|
-|2. There is a secure login and registration page for each user  | 	Met	| Fix the signup button, otherwise good		| 
+|2. There is a secure login and registration page for each user  | 	Met	| Good		| 
 |3. The user can view other social media posts   | Met		| Add the names of the people who posted the recipe		| 
 |4. Users are able to create their own shopping list in the app  | Met		| Make how to add more clear since it is quite confusing 			| 
 |5. Users can search recipes based on ingredients  | Met		|Specify that it is search by ingredient 			| 
@@ -622,6 +634,7 @@ The above piece of code is my shopping list page. I followed the same format as 
 This was after I showed this to an anonymous student here at my school to get their feedback on the project.
 
 ## Suggestions for future development
+For future development the first suggestion was including the names of the people posting the ingredients. This would be in the homepage so that people would be able toee who posted them. It would enable them to contact them in case of any issues, adding on to the purpose of this project which was to create more recipe-sharing in this community.
 
-
+The second suggestion was to let the user post images of their recipes to their posts. This would enable the users of the social media site to see much more clearly how to make their recipe. Additionally, for everyone involved, this would make the site much better to look at as there would be images and not just text. If implemented, users would have a much better time using the app. 
 
