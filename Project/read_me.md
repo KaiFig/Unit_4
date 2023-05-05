@@ -23,7 +23,7 @@ Lastly for the last language I will be using is Python. Python enables me to cre
 
 
 **Design statement:**
-I will to design and make a web based social media site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
+I will design and make a web based social media site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
 
 
 ## Success criteria
@@ -117,8 +117,8 @@ I will to design and make a web based social media site for a client who is a hi
 |------------------------------------|--------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------|
 |Test the login   | Unit testing  | Username and password   | The user is able to login to the application and the home screen is displayed when they enter. An error message appears if the password or the username is not correct  | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
 |Test the login, registeration, home screen, new posts and profile page  | Integration testing   | Username, password, title, content, ingredients   | The user is able to signup and then login, letting them go to the home screen where they are able to view everyone's posts and then they are able upload new posts | They are able to signup and login and create a new post that is displayed in the home screen and profile page  | 1, 2, 3, 6
-
-
+|Test the shopping list function	|Unit testing 	| Click on button on the home screen	| This enables the user to add their ingredients into their shopping list from the post so that they do not miss any ingredients  | The ingredients from the post are in teh shopping list 	| 4  | 
+| Test the posting and shopping functions 	| Usability testing	| The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
 
 # Criteria C: Development
 ## Existing Tools
