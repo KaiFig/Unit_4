@@ -122,7 +122,7 @@ I will design and make a web based social media site for a client who is a high 
 |Test the shopping list function	|Unit testing 	| Click on button on the home screen	| This enables the user to add their ingredients into their shopping list from the post so that they do not miss any ingredients  | The ingredients from the post are in teh shopping list 	| 4  | 
 | Test the posting and shopping functions 	| Usability testing	|User posts a new post and is able to add items to the shopping list 	|  The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
 | Test the search function  | Unit testing  ｜ One searchword is inputted to the search bar 	| The user inputs a search word in the search bar which searches the database   | The pozts with the key word is outputted in the home page |  5 |  
-	| Test the new posts, home page, shopping list 	| Integration testing 	| The user inputs a recipe 	| The user inputs a recipe, then adds them into the shopping list 	| The shopping list displays the ingredients and the home page displays the post  | 1,3, 4  | 
+| Test the new posts, home page, shopping list 	| Integration testing 	| The user inputs a recipe 	| The user inputs a recipe, then adds them into the shopping list 	| The shopping list displays the ingredients and the home page displays the post  | 1,3, 4  | 
 
 
 # Criteria C: Development
