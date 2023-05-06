@@ -6,7 +6,7 @@
 # Criteria A: Planning
 
 ## Problem definition
-When I brainstormed with my client (myself) about problems I face and a SNS that would solve that, I realized that in school, we are not able to share recipes that we make, which is a shame as we come from such a diverse background and have lots of new and interesting recipes to share. We are unable to get large numbers of people together, in one platform to share their ideas, each having an equal voice. At school, unless we are close to someone, we usually do not get the opportunity to cook with them or learn their recipes. Even if I share recipes to someone usually I tend to forget what I wrote since I don't have a visible record of my sharing of recipes with all their information. Also, even if I search online, it is hard to get help on a recipe as I don't know them, and there are usually no ways of contacting them. Therefore, an SNS would enable messaging for help. Additionally, whenever I go to the supermarket, since I go there without a shopping list for recipes, I end up buying more than I need. This contributes to increased spending, and also, since I am not able to use everything, it makes me waste food. I have tried writing my own shopping list by looking at the recipe before and writing stuff down, however I have forgotten a nmber of things before so it's not the most effective. Additionally, when I have lots of one ingredint I tend to not use all of it as I do not konw how to use that ingredient since I am not able to scan lots of recipes for a specific ingredient. This contributes to even more food waste. As proof of this, the notest taken from the brainstorming session are listed in the appendix. 
+When I brainstormed with my client (myself) about problems I face and a SNS that would solve that, I realized that in school, we are not able to share recipes that we make, which is a shame as we come from such a diverse background and have lots of new and interesting recipes to share. There are no applications where we are able to get large numbers of people together, in one platform to share their ideas, each having an equal voice. At school, unless we are close to someone, we usually do not get the opportunity to cook with them or learn their recipes. Even if I share recipes to someone usually I tend to forget what I wrote since I don't have a visible record of my sharing of recipes with all their information. Also, even if I search online, it is hard to get help on a recipe as I don't know them, and there are usually no ways of contacting them. Therefore, an SNS would enable messaging for help. Additionally, whenever I go to the supermarket, since I go there without a shopping list for recipes, I end up buying more than I need. This contributes to increased spending, and also, since I am not able to use everything, it makes me waste food. I have tried writing my own shopping list by looking at the recipe before and writing stuff down, however I have forgotten a nmber of things before so it's not the most effective. Additionally, when I have lots of one ingredint I tend to not use all of it as I do not konw how to use that ingredient since I am not able to scan lots of recipes for a specific ingredient. This contributes to even more food waste. As proof of this, the notest taken from the brainstorming session are listed in the appendix. 
 　
 ## Proposed solution
 To solve my client’s issue I will be creating a web based social media site using HTML CSS and Python. This site will allow the end user to share their own recipes and other users to share theirs as well. Additionally, they can make a shopping list
@@ -27,12 +27,14 @@ I will design and make a web based social media site for a client who is a high 
 
 
 ## Success criteria
-1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients 
-2. There is a secure login and registration page for each user 
-3. The user can view other social media posts
-4. Users are able to create their own shopping list in the app
-5. Users can search recipes based on ingredients 
-6. User can have their own profile page that displays their email and posts. 
+| No. | Success critieria	         | Issue tackled       |
+|----------------------------|---------------------------------|----------------|
+| 1 | The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  | "in school, we are not able to share recipes that we make"  | 
+| 2 | There is a login and registration page for each user | "There are no applications where we are able to get large numbers of people together, in one platform to share their ideas"  | 
+| 3 | The user can view other social media post  | "At school, unless we are close to someone, we usually do not get the opportunity to cook with them or learn their recipes"  | 
+| 4 | Users are able to create their own shopping list in the app  | "I go there without a shopping list for recipes, I end up buying more than I need. This contributes to increased spending, and also, since I am not able to use everything, it makes me waste food" | 
+| 5 | Users can search recipes based on ingredients  | "I have lots of one ingredint I tend to not use all of it as I do not konw how to use that ingredient since I am not able to scan lots of recipes for a specific ingredient"  | 
+| 6 | User can have their own profile page that displays their email and posts. | "Even if I share recipes to someone usually I tend to forget what I wrote since I don't have a visible record of my sharing of recipes with all their information" | 
 
 
 # Criteria B: Design
@@ -118,7 +120,10 @@ I will design and make a web based social media site for a client who is a high 
 |Test the login   | Unit testing  | Username and password   | The user is able to login to the application and the home screen is displayed when they enter. An error message appears if the password or the username is not correct  | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
 |Test the login, registeration, home screen, new posts and profile page  | Integration testing   | Username, password, title, content, ingredients   | The user is able to signup and then login, letting them go to the home screen where they are able to view everyone's posts and then they are able upload new posts | They are able to signup and login and create a new post that is displayed in the home screen and profile page  | 1, 2, 3, 6
 |Test the shopping list function	|Unit testing 	| Click on button on the home screen	| This enables the user to add their ingredients into their shopping list from the post so that they do not miss any ingredients  | The ingredients from the post are in teh shopping list 	| 4  | 
-| Test the posting and shopping functions 	| Usability testing	| The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
+| Test the posting and shopping functions 	| Usability testing	|User posts a new post and is able to add items to the shopping list 	|  The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
+| Test the search function  | Unit testing  ｜ One searchword is inputted to the search bar 	| The user inputs a search word in the search bar which searches the database   | The pozts with the key word is outputted in the home page |  5 |  
+	| Test the new posts, home page, shopping list 	| Integration testing 	| The user inputs a recipe 	| The user inputs a recipe, then adds them into the shopping list 	| The shopping list displays the ingredients and the home page displays the post  | 1,3, 4  | 
+
 
 # Criteria C: Development
 ## Existing Tools
