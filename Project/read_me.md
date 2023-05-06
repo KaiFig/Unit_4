@@ -74,6 +74,7 @@ I will design and make a web based social media site for a client who is a high 
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_2.jpg)
 
 **Fig 6** The second flowchart shows my home page
+
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_3.jpg)
 
 **Fig 7** The third flowchart shows my shopping list function 
