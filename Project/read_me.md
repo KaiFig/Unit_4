@@ -78,6 +78,11 @@ I will design and make a web based social media site for a client who is a high 
 
 **Fig 7** The third flowchart shows my shopping list function 
 
+## UML diagram 
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_UML.jpg)
+
+**Fig 8** The UML diagram shows the class that I used called database worker to connect to the database 
+
 ## Record of Tasks
 
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
@@ -616,7 +621,7 @@ The above piece of code is my shopping list page. I followed the same format as 
 
 ## Evaluation table
 
-### Client
+### Client (Record of this is in the appendix) 
 | Critieria | Met or not?        | Feedback       |
 |----------------------------|---------------------------------|----------------|
 |1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  |Met      |Met, no suggestions	|
@@ -626,7 +631,7 @@ The above piece of code is my shopping list page. I followed the same format as 
 |5. Users can search recipes based on ingredients  | Met		|Specify that it is search by ingredient 			| 
 |6. User can have their own profile page that displays their email and posts.   | Met			| Add a button to the shopping list		| 
 
-### Other user
+### Other user (Record of this is in the appendix) 
 | Critieria | Met or not?        | Feedback       |
 |----------------------------|---------------------------------|----------------|
 |1. The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  |Met      |Good		|
@@ -639,7 +644,15 @@ The above piece of code is my shopping list page. I followed the same format as 
 This was after I showed this to an anonymous student here at my school to get their feedback on the project.
 
 ## Suggestions for future development
-For future development the first suggestion was including the names of the people posting the ingredients. This would be in the homepage so that people would be able toee who posted them. It would enable them to contact them in case of any issues, adding on to the purpose of this project which was to create more recipe-sharing in this community.
+For future development the first suggestion was including the names of the people posting the ingredients. This would be in the homepage so that people would be able toee who posted them. Right now, even though the project does enable users to share recipes, wich was the initial aim, it would be better for the end user if they could talk to the person for feedback and questions. For example, if they don't understand some instructions, then they can ask for clarification, making the site much more useful
 
-The second suggestion was to let the user post images of their recipes to their posts. This would enable the users of the social media site to see much more clearly how to make their recipe. Additionally, for everyone involved, this would make the site much better to look at as there would be images and not just text. If implemented, users would have a much better time using the app. 
+The second suggestion was to let the user post images of their recipes to their posts. This would enable the users of the social media site to see much more clearly how to make their recipe. Right now, all the users have are written steps which are a bit confusing to follow at times if the instructions are complicated. Therefore, having images would make it much more easier to understand making the site more useful to the end user. 
 
+
+# Appendix
+
+## Client interview (planning and design) 
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Client_notes_project_4.jpg)
+
+## Client interview (Feedback) 
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Client_feedback_project_4.jpg)
