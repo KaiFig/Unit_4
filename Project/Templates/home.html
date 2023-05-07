@@ -1,0 +1,45 @@
+{# This is the HTML for my home page #} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Welcome to the most popular SNS</title>
+    {% endif %}
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("shopping_list2", user_id = user_id) }}"> Shopping List </a>
+    <a href = "{{ url_for("new_post") }}">Create a new post</a>
+    <a href = "{{ url_for ("logout") }}"> Logout</a>
+    <a href="{{ url_for('profile', user_id=user_id) }}" class="btn btn-primary">Profile</a>
+    <form action="/home" method="post">
+        <input type="text" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+</div>
+
+<table>
+    <tr>
+        <th>id (Click to add ingredients to shopping list)</th>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Ingredients</th>
+    </tr>
+        {# template language jinja2 #}
+    {% for p in posts %}
+    <tr>
+        <td><a href = "{{ url_for('shopping_list', user_id=p[4], post_id=p[0]) }}">{{ p[0] }}</a></td>
+        <td>{{ p[1].title() }}</td>
+        <td>{{ p[2] }}</td>
+        <td>{{ p[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
