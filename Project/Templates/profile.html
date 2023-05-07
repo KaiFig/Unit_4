@@ -1,0 +1,39 @@
+{# Profile page HTML #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("home") }}"> Homepage</a>
+</div>
+
+{% if user %}
+    <h1>Welcome, {{ user[1] }}</h1>
+    {% if posts|length > 0 %}
+    <p>Your posts are:</p>
+    <table>
+    <tr>
+        <th>id</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+        {# template language jinja2 #}
+    {% for p in posts %}
+    <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1].title() }}</td>
+        <td>{{ p[2] }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    {% else %}
+        <p>You don't have posts yet</p>
+    {% endif %}
+    {% else %}
+    <h1> User does not exist</h1>
+{%  endif %}
+</body>
+</html>
