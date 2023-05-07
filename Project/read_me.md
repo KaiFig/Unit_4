@@ -1,6 +1,6 @@
 # Unit 4 project: Recipe sharing social network 
 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project%204%20picture.jpeg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project%204%20picture.jpeg)
 **Fig 1** This is the title picture for my repository
 
 # Criteria A: Planning
@@ -40,12 +40,12 @@ I will design and make a web based social media site for a client who is a high 
 # Criteria B: Design
 
 ## System diagram
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_system_diagram.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_system_diagram.jpg)
 
 **Fig 2** This shows the system diagram for my project. All the files that I had in pycharm and the database "social_net.db" that I used to store all of the data. This was all done with flask and was displayed in safari on my macbookair 
 
 ## ER diagram
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_ER_diagram.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_ER_diagram.jpg)
 
 **Fig 3** This shows the ER diagram for my project showing how each table in the database is structured and what is in it 
 
@@ -62,25 +62,25 @@ I will design and make a web based social media site for a client who is a high 
 |16 | milk | 2| 
 
 ## Wireframe diagram 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_wireframe.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_wireframe.jpg)
 
 **Fig  4** This shows the wireframe for my project. Before starting the code, I tried to visualize how my website would look as then I would be able to design it much easier and I was able to show this to the client for feedback 
 
 ## Flowcharts 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_1.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_flowchart_1.jpg)
 
 **Fig 5** The first flowchart shows my login page
 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_2.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_flowchart_2.jpg)
 
 **Fig 6** The second flowchart shows my home page
 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_flowchart_3.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_flowchart_3.jpg)
 
 **Fig 7** The third flowchart shows my shopping list function 
 
 ## UML diagram 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Project_4_UML.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_UML.jpg)
 
 **Fig 8** The UML diagram shows the class that I used called database worker to connect to the database 
 
@@ -653,7 +653,7 @@ The second suggestion was to let the user post images of their recipes to their 
 # Appendix
 
 ## Client interview (planning and design) 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Client_notes_project_4.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Client_notes_project_4.jpg)
 
 ## Client interview (Feedback) 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Client_feedback_project_4.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Client_feedback_project_4.jpg)
