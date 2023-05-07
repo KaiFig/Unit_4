@@ -1,0 +1,38 @@
+{# Shopping list HTML #}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping list</title>
+    <link rel="stylesheet" href="/static/shopping_list.css">
+</head>
+<body>
+<div>
+    <a href = "{{ url_for("home") }}"> Homepage</a>
+</div>
+
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Ingredients</th>
+				<th>Check</th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for ingredient in ingredients %}
+			<tr>
+				<td>{{ ingredient[2] }}</td>
+				<td>{{ ingredient[1] }}</td>
+				<td>
+                    <form action="{{ url_for('delete_ingredient', ingredient_id=ingredient[0]) }}" method="post">
+                        <input type="hidden" name="_method" value="Done">
+                        <button type="submit">Delete</button>
+                    </form>
+                    {# Enables the user to delete the ingredients that they have already bought #}
+                </td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</body>
+</html>
