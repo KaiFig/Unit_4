@@ -13,14 +13,18 @@ To solve my client’s issue I will be creating a website using HTML CSS and Pyt
 
 
 ## Rationale for proposed solution
-I will be making an social media website as it is the most convenient way for the client to be able to view other people's recipes and to comment on them. An SNS involves quick sharing of these recipes making it the most effective. Additionally, it will also enable the user to search through the recipes very effectively through ingredients and name.
+I will be making an social media website as it is the most convenient way for the client to be able to view other people's recipes and to comment on them. An SNS involves quick sharing of these recipes making it the most effective. Additionally, it will also enable the user to search through the recipes very effectively through ingredients and name. 
 
-As for the software, first of all, I will be using HTML to create the website. This is because HTML enables the creation of the structure of the webpage, and for the developer it is quite easy to learn. Additionally, for the user, it creates a nice website. [^2]
+As for the software, first of all, I will be using HTML to create the website. This is because HTML enables the creation of the structure of the webpage, and for the developer it is quite easy to learn. [^1] Additionally, for the user, it enables them to see a website that is structured, making it easier to navigate. One final thing is that HTML allows for python code to be enbedded in it, enabling more functions for the end user [^2]
 
-Another language I will be using is CSS. This will enable me to structure the HTML webpage exactly how I want by creating a set of rules for it. This is important as for the end user, it enables them to have a clean website that they can use and navigate through easily. 
+Another language I will be using is CSS. This will enable me to structure the HTML webpage exactly how I want by creating a set of rules for it. This is important as for the end user, it enables them to have a clean website that they can use and navigate through easily. It makes the user experience a lot better and easier for them to use. [^3]
 
-Lastly for the last language I will be using is Python. Python enables me to create the functionality for the website. I used python as it can be placed in HTML as well, creating an integrated website. Additionaly, it has a large library that enables me, the developer to rely on other libraries to make the website. Also, it has a very large community of developers, enabling the quick use of research in support of my project. 
+Lastly for the last language I will be using is Python. Python enables me to create the functionality for the website. I used python as it can be placed in HTML as well, creating an integrated website. Additionaly, it has a large library that enables me, the developer to rely on other libraries to make the website. Also, it has a very large community of developers, enabling the quick use of research in support of my project. [^4]
 
+[^1]: “HTML vs JavaScript: Which Should You Learn?” Hackr.io, https://hackr.io/blog/html-vs-javascript. 
+[^2]: “HTML vs JavaScript: Top 8 Most Amazing Comparison You Need to Know.” EDUCBA, 3 Mar. 2023, https://www.educba.com/html-vs-javascript/. 
+[^3]: User, Devmountain. “What Is CSS and Why Should You Use It?” Devmountain, 22 Apr. 2019, https://devmountain.com/blog/what-is-css-and-why-use-it/#:~:text=CSS%20makes%20the%20front%2Dend,for%20font%20color%20and%20more. 
+[^4]: Korsun, Julia. “The 16 Most Important Pros and Cons of Using Python for Web Development.” Software Development Blog &amp; IT Tech Insights | Django Stars, 10 Feb. 2023, https://djangostars.com/blog/python-web-development/. 
 
 **Design statement:**
 I will design and make a web based social media site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
@@ -124,15 +128,16 @@ I will design and make a web based social media site for a client who is a high 
 
 | Instruction                        | Category     | Input example / code                               | Description                                                                                                        | Expected output                                                         | Success criteria |
 |------------------------------------|--------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------|
-|Test the login   | Unit testing  | Email: kaifig@icloud.com   Password: (not shared for privacy issues)  | The user is able to login to the application and the home screen is displayed when they enter. An error message appears if the password or the username is not correct  | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
-|Test the login if wrong username or password | Unit testing  | Email: kai1234.com Password: gabui | The user inputs the wrong password, username or both when trying to login | An error message appears letting the user know that there is an error with their attempted login | 2  | 
-|
-|Test the registration with wrong inputs | Unit testing | Email: kai1234.com Password gabui Check password: Gavui | The user doesn't input the correct values for email or the passwords aren't matching | An error message is displayed on the user interface 	| 2  | 
-|Test the login, registeration, home screen, new posts and profile page  | Integration testing   | Username: kaifig@icloud.com password: (not shared for privacy issues) title: Scrambled eggs content: Easy scrambled eggs ingredients: eggs, butter, salt, pepper   | The user is able to signup and then login, letting them go to the home screen where they are able to view everyone's posts and then they are able upload new posts | They are able to signup and login and create a new post that is displayed in the home screen and profile page  | 1, 2, 3, 6
-|Test the shopping list function	|Unit testing 	| Click on button on the home screen	| This enables the user to add their ingredients into their shopping list from the post so that they do not miss any ingredients  | The ingredients from the post are in teh shopping list 	| 4  | 
-| Test the posting and shopping functions 	| Usability testing	|User posts a new post and is able to add items to the shopping list 	|  The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
-| Test the search function  | Unit testing  ｜ One searchword is inputted to the search bar 	| The user inputs a search word in the search bar which searches the database   | The pozts with the key word is outputted in the home page |  5 |  
-| Test the new posts, home page, shopping list 	| Integration testing 	| The user inputs a recipe 	| The user inputs a recipe, then adds them into the shopping list 	| The shopping list displays the ingredients and the home page displays the post  | 1,3, 4  | 
+|Test the login   | Unit testing  | Email, password | The user is able to login to the application and the home screen is displayed when they enter. An error message appears if the password or the username is not correct  | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
+|Test the login if wrong username or password | Unit testing  | Email, Password | The user inputs the wrong password, username or both when trying to login | An error message appears letting the user know that there is an error with their attempted login | 2  | 
+|Test the registration | Unit testing | Email, password, check password  | The user inputs their email and passwords and try to sign up | The user is able to sign up and their email and password (which is hashed) is saved in the database 
+|Test the registration with wrong inputs | Unit testing | Email, password, check password | The user doesn't input the correct values for email or the passwords aren't matching | An error message is displayed on the user interface 	| 2  | 
+|Test the profile page | Unit testing | n/a  | The user is clicks on teh button in the home page to access their profile page 	| The user is able to see their personal details and the posts that they have posted in the past 	| 6  | 
+|Test the login, registeration, home screen, new posts and profile page  | Integration testing   | Email, Password, Check password, title, content, ingredients  | The user is able to signup and then login, letting them go to the home screen where they are able to view everyone's posts and then they are able upload new posts | They are able to signup and login and create a new post that is displayed in the home screen and profile page  | 1, 2, 3, 6 |
+|Test the shopping list function	|Unit testing 	| n/a	| This enables the user to add their ingredients into their shopping list from the post so that they do not miss any ingredients  | The ingredients from the post are in the shopping list 	| 4  | 
+| Test the posting and shopping functions 	| Usability testing	|Title, content, ingredients	|  The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
+| Test the search function  | Unit testing  | Word searched in search bar   | The user inputs a search word in the search bar which searches the database   | The posts with the key word is outputted in the home page |  5 |  
+| Test the new posts, home page, shopping list 	| Integration testing 	| Title, content, ingredient	| The user inputs a recipe, then adds them into the shopping list 	| The shopping list displays the ingredients and the home page displays the post  | 1,3, 4  | 
 
 
 # Criteria C: Development
@@ -147,7 +152,7 @@ I will design and make a web based social media site for a client who is a high 
 | Chat GPT                   |                                 |                | 
 
 ## List of techniques used
-1. Flask library
+1. Flask library/routes
 2. For loops
 3. If statements
 4. Password hashing
