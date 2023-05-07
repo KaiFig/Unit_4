@@ -1,0 +1,106 @@
+/*This is the CSS file that I used for my login, signup and posting pages*/
+body {
+  background-color: #FCEADE;
+  background-image: url("/static/Cooking-Home-Collection.jpeg");
+  /*This image stays the same throughout my website*/
+  background-size: cover;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="passwd"],
+input[type="confirmpasswd"],
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+button[type="submit"],
+a.button {
+  background-color: rgba(76, 175, 80, 0.8);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+a.button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgba(76, 175, 80, 0.8);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 200px;
+}
+
+a.button:hover,
+button[type="submit"]:hover {
+  background-color: #4CAF50;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 1px solid #4CAF50;
+}
+.home_button {
+  background-color: #199319;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.home_button:hover {
+  background-color: #223094;
+}
+form p {
+  background-color: rgba(252, 234, 222, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+}
