@@ -1,0 +1,40 @@
+{# Signup page HTML #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+{% if message %}
+<div><p>Error: {{ message }}</p></div>
+{% endif %}
+
+{# Above if statement enables the user to receive the error message #}
+    <form method ="post">
+        <h1>Welcome to the cookpad!</h1>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name = "email" style="width: 50%;">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="passwd" name = "passwd" style="width: 50%;">
+        </div>
+        <div>
+            <label for="">Confirm Password</label>
+            <input type="confirmpasswd" name = "confirmpasswd" style="width: 50%;">
+        </div>
+        
+        {# Confirm password makes sure that the user is entering the desired password #}
+        
+        <div>
+            <input type="submit" name="" value="Sign up">
+        </div>
+        <div>
+        <a href = "{{ url_for("login") }}">Cancel</a>
+    </div>
+    </form>
+</body>
+</html>
