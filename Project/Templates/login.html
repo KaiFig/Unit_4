@@ -1,0 +1,36 @@
+{# Login page HTML #}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Cookhub</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<body>
+{% if message %}
+<div><p>Error: {{ message }}</p></div>
+{% endif %}
+
+{# If statement above enables the user to receive an error message #}
+
+    <form method ="post">
+        <h2>Login</h2>
+        <div>
+            <label for="">Email</label>
+            <input type="email" name = "email" style="width: 50%;">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type ="password" name="passwd" style="width: 50%;">
+        </div>
+        <div>
+            <input type="submit" name="" value="Log in">
+        </div>
+        <div>
+        <a href = "{{ url_for("signup") }}">Signup</a>
+    </div>
+    </form>
+
+
+</body>
+</html>
