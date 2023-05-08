@@ -117,6 +117,7 @@ I will design and make a web based social media site for a client who is a high 
 |23     | Development: Fix the search and sql queries | The user can search the database with a specific recipe and it returns everything. Also the search bar works more than once  | 1 hr  | Apr 21st | C  | 
 |24     | Design: Complete the UML diagram | I show the relations between all the classes in the website so that other people viewing the code understand it | 20 min   | Apr 21st | B  | 
 |25     | Development: Better the CSS for each page  | The UI is much more improved and users are able to enjoy a website that looks nice    | 45 min    | Apr 21st  | C   |
+|26 	| Development: Document my code 	| On my repository, interesting parts of my code and key parts of it  | 
 
 
 
