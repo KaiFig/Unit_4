@@ -1,6 +1,6 @@
 # Unit 4 project: Recipe sharing social network 
 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Background_picture.jpeg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Background_picture.jpg)
 **Fig 1** This is the title picture for my repository
 
 # Criteria A: Planning
