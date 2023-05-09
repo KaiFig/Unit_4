@@ -34,7 +34,7 @@ I will design and make a web based social media site for a client who is a high 
 | No. | Success critieria	         | Issue tackled       |
 |----------------------------|---------------------------------|----------------|
 | 1 | The user can upload their own recipes as a social media post. The post includes the title, content and ingredients  | "in school, we are not able to share recipes that we make"  | 
-| 2 | There is a login and registration page for each user | "There are no applications where we are able to get large numbers of people together, in one platform to share their ideas"  | 
+| 2 | There is a login and registration page for users | "There are no applications where we are able to get large numbers of people together, in one platform to share their ideas"  | 
 | 3 | The user can view other social media post  | "At school, unless we are close to someone, we usually do not get the opportunity to cook with them or learn their recipes"  | 
 | 4 | Users are able to create their own shopping list in the app  | "I go there without a shopping list for recipes, I end up buying more than I need. This contributes to increased spending, and also, since I am not able to use everything, it makes me waste food" | 
 | 5 | Users can search recipes based on ingredients  | "I have lots of one ingredint I tend to not use all of it as I do not konw how to use that ingredient since I am not able to scan lots of recipes for a specific ingredient"  | 
@@ -630,7 +630,12 @@ At first, I was not sure how to delete the items from the shopping list. This is
 ```
 The above piece of code is my shopping list page. I followed the same format as my home page, creating a table by looping throuh each ingredient in the shopping list database. Then I made sure to include the delete function which enabled users to delete their items once they bought it which was very important as without it, it would be very impractical. 
 
+# Criteria D: Functionality 
 
+## Video
+https://drive.google.com/drive/folders/1Eb6pjUbozH7UqI9INZChI23BUmCSp13v?usp=sharing
+
+The planning for the video is in the appendix 
 
 # Critieria E: Evaluation
 
@@ -671,3 +676,6 @@ The second suggestion was to let the user post images of their recipes to their 
 
 ## Client interview (Feedback) 
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Client_feedback_project_4.jpg)
+
+## Video planning 
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Video_planning.jpg)
