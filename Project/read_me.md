@@ -23,6 +23,8 @@ As for the software, first of all, I will be using HTML to create the website. T
 
 Another language I will be using is CSS. This will enable me to structure the HTML webpage exactly how I want by creating a set of rules for it. This is important as for the end user, it enables them to have a clean website that they can use and navigate through easily. It makes the user experience a lot better and easier for them to use. [^3]
 
+To store the posts from the users I will be using an SQL database. First of all SQL is easy to use for the developer. Additionally, to store the amount of information that the users produce with posting, the only way to manage this is to use a database. 
+
 Lastly for the last language I will be using is Python. Python enables me to create the functionality for the website. I used python as it can be placed in HTML as well, creating an integrated website. Additionaly, it has a large library that enables me, the developer to rely on other libraries to make the website. Also, it has a very large community of developers, enabling the quick use of research in support of my project. [^4]
 
 [^1]: “HTML vs JavaScript: Which Should You Learn?” Hackr.io, https://hackr.io/blog/html-vs-javascript. 
