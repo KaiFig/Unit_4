@@ -8,6 +8,10 @@
 ## Problem definition
 When I brainstormed with my client (myself) about problems I face and a SNS that would solve that, I realized that in school, we are not able to share recipes that we make, which is a shame as we come from such a diverse background and have lots of new and interesting recipes to share. There are no applications where we are able to get large numbers of people together, in one platform to share their ideas, each having an equal voice. At school, unless we are close to someone, we usually do not get the opportunity to cook with them or learn their recipes. Even if I share recipes to someone usually I tend to forget what I wrote since I don't have a visible record of my sharing of recipes with all their information. Also, even if I search online, it is hard to get help on a recipe as I don't know them, and there are usually no ways of contacting them. Therefore, an SNS would enable messaging for help. Additionally, whenever I go to the supermarket, since I go there without a shopping list for recipes, I end up buying more than I need. This contributes to increased spending, and also, since I am not able to use everything, it makes me waste food. I have tried writing my own shopping list by looking at the recipe before and writing stuff down, however I have forgotten a nmber of things before so it's not the most effective. Additionally, when I have lots of one ingredint I tend to not use all of it as I do not konw how to use that ingredient since I am not able to scan lots of recipes for a specific ingredient. This contributes to even more food waste. As proof of this, the notest taken from the brainstorming session are listed in the appendix. 
 　
+**Design statement:**
+I will design and make a web based social media site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
+
+
 ## Proposed solution
 To solve my client’s issue I will be creating a website using HTML CSS and Python. This site will have a login and signup system so that multiple users are able to use it. This site will allow the end user to share their own recipes and other users to share theirs as well. Within the website, there will be a shopping list so that people can put the ingredients they need and a search bar to search for recipes based on the ingredients 
 
@@ -26,8 +30,6 @@ Lastly for the last language I will be using is Python. Python enables me to cre
 [^3]: User, Devmountain. “What Is CSS and Why Should You Use It?” Devmountain, 22 Apr. 2019, https://devmountain.com/blog/what-is-css-and-why-use-it/#:~:text=CSS%20makes%20the%20front%2Dend,for%20font%20color%20and%20more. 
 [^4]: Korsun, Julia. “The 16 Most Important Pros and Cons of Using Python for Web Development.” Software Development Blog &amp; IT Tech Insights | Django Stars, 10 Feb. 2023, https://djangostars.com/blog/python-web-development/. 
 
-**Design statement:**
-I will design and make a web based social media site for a client who is a high school student that is interested in cooking. The SNS will be about sharing and viewing other peoples recipes and is constructed using the software CSS, HTML and Python. It will take 4 weeks to make and will be evaluated according to the criteria A, B, C, D, and E. 
 
 
 ## Success criteria
