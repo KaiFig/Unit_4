@@ -143,16 +143,16 @@ Lastly for the last language I will be using is Python. Python enables me to cre
 
 | Instruction                        | Category     | Input example / code                               | Description                                                                                                        | Expected output                                                         | Success criteria |
 |------------------------------------|--------------|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|------------------|
-|Test the login   | Unit testing  | Email, password | The user is able to login to the application and the home screen is displayed when they enter. An error message appears if the password or the username is not correct  | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
-|Test the login if wrong username or password | Unit testing  | Email, Password | The user inputs the wrong password, username or both when trying to login | An error message appears letting the user know that there is an error with their attempted login | 2  | 
-|Test the registration | Unit testing | Email, password, check password  | The user inputs their email and passwords and try to sign up | The user is able to sign up and their email and password (which is hashed) is saved in the database 
-|Test the registration with wrong inputs | Unit testing | Email, password, check password | The user doesn't input the correct values for email or the passwords aren't matching | An error message is displayed on the user interface 	| 2  | 
+|Test the login   | Unit testing  | Email: kai@icloud.com password: Not shared for privacy issues  | The user is able to login to the application and the home screen is displayed when they enter | The user logs in if the username and password is correct and the home screen is displayed with a cookie being created as well   |2, 3 | 
+|Test the login if wrong username or password | Unit testing  | Email: kai@icloud.com Password: 1588 (wrong password) | The user inputs the wrong password, username or both when trying to login | An error message appears letting the user know that there is an error with their attempted login | 2  | 
+|Test the registration | Unit testing | Email: kai@icloud.com password: (not shared) check password: (not shared)  | The user inputs their email and passwords and try to sign up | The user is able to sign up and their email and password (which is hashed) is saved in the database 
+|Test the registration with wrong inputs | Unit testing | Email: kai@icloud.com password: (not shared) check password: (not shared) | The user doesn't input the correct values for email or the passwords aren't matching | An error message is displayed on the user interface 	| 2  | 
 |Test the profile page | Unit testing | n/a  | The user is clicks on teh button in the home page to access their profile page 	| The user is able to see their personal details and the posts that they have posted in the past 	| 6  | 
-|Test the login, registeration, home screen, new posts and profile page  | Integration testing   | Email, Password, Check password, title, content, ingredients  | The user is able to signup and then login, letting them go to the home screen where they are able to view everyone's posts and then they are able upload new posts | They are able to signup and login and create a new post that is displayed in the home screen and profile page  | 1, 2, 3, 6 |
+|Test the login, registeration, home screen, new posts and profile page  | Integration testing   | Email: kai@icloud.com Password: (not shared)  Check password: (not shared)  title: Cacio e pepe content: Easy Cacio e pepe ingredients: Pasta, pepper, pecorino  | The user is able to signup and then login, letting them go to the home screen where they are able to view everyone's posts and then they are able upload new posts | They are able to signup and login and create a new post that is displayed in the home screen and profile page  | 1, 2, 3, 6 |
 |Test the shopping list function	|Unit testing 	| n/a	| This enables the user to add their ingredients into their shopping list from the post so that they do not miss any ingredients  | The ingredients from the post are in the shopping list 	| 4  | 
-| Test the posting and shopping functions 	| Usability testing	|Title, content, ingredients	|  The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
-| Test the search function  | Unit testing  | Word searched in search bar   | The user inputs a search word in the search bar which searches the database   | The posts with the key word is outputted in the home page |  5 |  
-| Test the new posts, home page, shopping list 	| Integration testing 	| Title, content, ingredient	| The user inputs a recipe, then adds them into the shopping list 	| The shopping list displays the ingredients and the home page displays the post  | 1,3, 4  | 
+| Test the posting and shopping functions 	| Usability testing	|Title: Eggs content: Easy eggs ingredients: Eggs, salt, pepper	|  The user is able to use these functions with no issue and they are able to see if it is easy to naviage and use 	| User is able to use these functions with ease 	| 1,4 | 
+| Test the search function  | Unit testing  | Word searched in search bar (ex: eggs)   | The user inputs a search word in the search bar which searches the database   | The posts with the key word is outputted in the home page |  5 |  
+| Test the new posts, home page, shopping list 	| Integration testing 	| Title: Udon content: Easy udon ingredient: 7-11 udon, negi, shichimi	| The user inputs a recipe, then adds them into the shopping list 	| The shopping list displays the ingredients and the home page displays the post  | 1,3, 4  | 
 
 
 # Criteria C: Development
@@ -174,7 +174,6 @@ Lastly for the last language I will be using is Python. Python enables me to cre
 5. Interacting with databases
 6. Lists
 7. Cookies
-8. 
 
 
 ## Success criteria 1 
