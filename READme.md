@@ -686,7 +686,6 @@ The second suggestion was to let the user post images of their recipes to their 
 
 
 # Appendix
-<a> id ='appendix'</a>
 ## Client interview (planning and design) 
 ![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Client_notes_project_4.jpg)
 
