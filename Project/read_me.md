@@ -48,7 +48,7 @@ Lastly for the last language I will be using is Python. Python enables me to cre
 # Criteria B: Design
 
 ## System diagram
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_system_diagram.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_system_diagram_1.jpg)
 
 **Fig 2** This shows the system diagram for my project. All the files that I had in pycharm and the database "social_net.db" that I used to store all of the data. This was all done with flask and was displayed in safari on my macbookair 
 
@@ -70,7 +70,7 @@ Lastly for the last language I will be using is Python. Python enables me to cre
 |16 | milk | 2| 
 
 ## Wireframe diagram 
-![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_wireframe.jpg)
+![](https://github.com/KaiFig/Unit_4/blob/main/Project/Pictures/Project_4_wireframe_1.jpg)
 
 **Fig  4** This shows the wireframe for my project. Before starting the code, I tried to visualize how my website would look as then I would be able to design it much easier and I was able to show this to the client for feedback 
 
